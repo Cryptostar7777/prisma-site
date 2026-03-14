@@ -2340,9 +2340,12 @@ p {
   });
 
   // ── Estimate Calculator ──
+  // Real pricing based on VNHS Price List 2026
+  // Window: $14.5/ln ft, min $150 + $25 removal. Small ~10sqft, Med ~15sqft, Lg ~25sqft+
+  // Entry door: $450-$830. Patio: $400-$600+
   const pricing = {
-    window: { small: [300, 500], medium: [400, 700], large: [600, 1100] },
-    door:   { small: [500, 800], medium: [700, 1200], large: [1000, 2200] }
+    window: { small: [175, 300], medium: [250, 450], large: [400, 750] },
+    door:   { small: [450, 630], medium: [530, 830], large: [630, 1100] }
   };
 
   let calcState = { type: 'window', size: 'medium', qty: 1 };
