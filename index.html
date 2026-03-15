@@ -270,12 +270,10 @@ ul { list-style: none; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 20% 80%, rgba(200,149,108,0.12) 0%, transparent 70%),
-    radial-gradient(ellipse 60% 80% at 80% 20%, rgba(200,149,108,0.08) 0%, transparent 60%),
-    linear-gradient(135deg, var(--prisma-cream) 0%, #FFF8F2 30%, #F5EDE4 60%, var(--prisma-cream) 100%);
+    linear-gradient(135deg, rgba(250,248,245,0.92) 0%, rgba(255,248,242,0.85) 40%, rgba(245,237,228,0.75) 70%, rgba(250,248,245,0.6) 100%),
+    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=80') center/cover no-repeat;
   z-index: 0;
 }
-/* Decorative window light rays */
 .hero::after {
   content: '';
   position: absolute;
@@ -518,7 +516,19 @@ ul { list-style: none; }
   position: relative;
   overflow: hidden;
 }
-/* CSS-generated window "photos" */
+/* Window card images — real photos */
+.window-card-img {
+  background: var(--prisma-cream);
+}
+.window-card-img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s var(--ease-out);
+}
+.window-card:hover .window-card-img img {
+  transform: scale(1.05);
+}
 .window-card-img::after {
   content: '';
   position: absolute;
@@ -526,167 +536,9 @@ ul { list-style: none; }
   opacity: 0;
   background: linear-gradient(to top, rgba(43,45,59,0.6) 0%, transparent 60%);
   transition: opacity 0.4s;
+  z-index: 1;
 }
 .window-card:hover .window-card-img::after { opacity: 1; }
-
-.wimg-casement {
-  background:
-    linear-gradient(135deg, #E8DDD0 0%, #D4C4B0 40%, #C8B89E 100%);
-}
-.wimg-casement::before {
-  content: '';
-  position: absolute;
-  inset: 20px;
-  border: 2px solid rgba(255,255,255,0.5);
-  border-radius: 2px;
-  background:
-    linear-gradient(180deg, rgba(173,216,230,0.3) 0%, rgba(135,206,235,0.15) 40%, rgba(200,220,240,0.25) 100%);
-  box-shadow: inset 0 0 40px rgba(255,255,255,0.2);
-}
-.wimg-casement .window-pane {
-  position: absolute;
-  top: 20px; bottom: 20px;
-  left: 50%;
-  width: 2px;
-  background: rgba(255,255,255,0.5);
-}
-
-.wimg-doublehung {
-  background:
-    linear-gradient(180deg, #DED3C4 0%, #C9B9A5 50%, #BFAD96 100%);
-}
-.wimg-doublehung::before {
-  content: '';
-  position: absolute;
-  inset: 18px;
-  border: 2.5px solid rgba(180,160,130,0.6);
-  background:
-    linear-gradient(180deg, rgba(200,225,245,0.25) 0%, rgba(180,210,235,0.2) 50%, rgba(200,225,245,0.25) 100%);
-}
-.wimg-doublehung .window-pane {
-  position: absolute;
-  left: 18px; right: 18px;
-  top: 50%;
-  height: 3px;
-  background: rgba(180,160,130,0.6);
-}
-.wimg-doublehung .window-pane::before {
-  content: '';
-  position: absolute;
-  top: -50%; left: 50%;
-  width: 2.5px; height: calc(100% + 100%);
-  transform: translateX(-50%);
-  background: rgba(180,160,130,0.4);
-}
-
-.wimg-bay {
-  background:
-    linear-gradient(135deg, #E2D6C8 0%, #D6C7B5 30%, #CAB9A3 70%, #E2D6C8 100%);
-}
-.wimg-bay::before {
-  content: '';
-  position: absolute;
-  top: 15px; bottom: 15px;
-  left: 20%; right: 20%;
-  background:
-    linear-gradient(180deg, rgba(170,210,240,0.3) 0%, rgba(200,230,255,0.2) 100%);
-  border: 2px solid rgba(255,255,255,0.4);
-  clip-path: polygon(0 0, 25% 0, 25% 100%, 0 100%);
-}
-.wimg-bay .window-pane {
-  position: absolute;
-  top: 15px; bottom: 15px;
-  left: calc(20% + 1px); right: calc(20% + 1px);
-  display: flex;
-}
-.wimg-bay .window-pane::before,
-.wimg-bay .window-pane::after {
-  content: '';
-  flex: 1;
-  border: 2px solid rgba(255,255,255,0.4);
-  margin: 0 1px;
-  background: linear-gradient(180deg, rgba(170,210,240,0.25) 0%, rgba(200,230,255,0.15) 100%);
-}
-.wimg-bay .window-pane-center {
-  position: absolute;
-  top: 15px; bottom: 15px;
-  left: calc(20% + 33.3%); right: calc(20% + 33.3%);
-  min-width: 33.3%;
-  border: 2px solid rgba(255,255,255,0.4);
-  background: linear-gradient(180deg, rgba(170,210,240,0.3) 0%, rgba(200,230,255,0.2) 100%);
-}
-
-.wimg-sliding {
-  background:
-    linear-gradient(90deg, #E0D3C4 0%, #D2C2AE 50%, #E0D3C4 100%);
-}
-.wimg-sliding::before {
-  content: '';
-  position: absolute;
-  inset: 16px;
-  border: 2px solid rgba(200,180,155,0.5);
-  background:
-    linear-gradient(90deg,
-      rgba(180,215,240,0.25) 0%, rgba(180,215,240,0.25) 48%,
-      rgba(200,180,155,0.5) 48%, rgba(200,180,155,0.5) 52%,
-      rgba(190,220,245,0.2) 52%, rgba(190,220,245,0.2) 100%
-    );
-}
-
-.wimg-awning {
-  background:
-    linear-gradient(180deg, #DDD1C2 0%, #CDBFAD 60%, #C5B59F 100%);
-}
-.wimg-awning::before {
-  content: '';
-  position: absolute;
-  inset: 20px;
-  border: 2px solid rgba(190,175,150,0.5);
-  background:
-    linear-gradient(180deg,
-      rgba(175,210,240,0.3) 0%, rgba(175,210,240,0.3) 35%,
-      rgba(190,175,150,0.5) 35%, rgba(190,175,150,0.5) 36%,
-      rgba(185,215,240,0.2) 36%, rgba(185,215,240,0.2) 100%
-    );
-}
-.wimg-awning .window-pane {
-  position: absolute;
-  top: 20px;
-  left: 20px; right: 20px;
-  height: 35%;
-  border-bottom: 2px solid rgba(190,175,150,0.5);
-  background: transparent;
-}
-
-.wimg-doors {
-  background:
-    linear-gradient(180deg, #E5DAC9 0%, #D0C0AA 50%, #C8B69C 100%);
-}
-.wimg-doors::before {
-  content: '';
-  position: absolute;
-  top: 12px; bottom: 12px;
-  left: 30%; right: 30%;
-  background:
-    linear-gradient(180deg, rgba(180,150,110,0.4) 0%, rgba(160,130,90,0.5) 100%);
-  border-radius: 80px 80px 0 0;
-  border: 2px solid rgba(180,150,110,0.3);
-}
-.wimg-doors .window-pane {
-  position: absolute;
-  top: 28px; bottom: 45%;
-  left: calc(30% + 10px); right: calc(30% + 10px);
-  background: linear-gradient(180deg, rgba(200,225,245,0.3) 0%, rgba(200,225,245,0.15) 100%);
-  border-radius: 70px 70px 0 0;
-  border: 1.5px solid rgba(255,255,255,0.3);
-}
-.wimg-doors .door-handle {
-  position: absolute;
-  top: 55%; right: calc(30% + 16px);
-  width: 6px; height: 20px;
-  background: rgba(200,180,140,0.7);
-  border-radius: 3px;
-}
 
 .window-card-body {
   padding: 1.5rem;
@@ -811,10 +663,10 @@ ul { list-style: none; }
 #warranty::before {
   content: '';
   position: absolute;
-  top: -50%; right: -20%;
-  width: 600px; height: 600px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(200,149,108,0.06) 0%, transparent 70%);
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(43,45,59,0.92) 0%, rgba(43,45,59,0.88) 50%, rgba(43,45,59,0.85) 100%),
+    url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80') center/cover no-repeat;
   pointer-events: none;
 }
 #warranty .section-label { color: var(--prisma-warm); }
@@ -861,7 +713,11 @@ ul { list-style: none; }
 /* ═══════════════════════════════════════════
    PROCESS
    ═══════════════════════════════════════════ */
-#process { background: var(--prisma-white); }
+#process {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.92) 50%, rgba(255,255,255,0.95) 100%),
+    url('https://images.unsplash.com/photo-1600566753376-12c8ab7c4c28?w=1200&q=80') center/cover no-repeat;
+}
 .process-timeline {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1126,46 +982,19 @@ ul { list-style: none; }
 .ba-before, .ba-after {
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: clip-path 0.5s var(--ease);
 }
 .ba-before {
-  background: linear-gradient(135deg, #B8AFA4 0%, #9E9589 40%, #8A8175 100%);
   clip-path: inset(0 0 0 0);
   z-index: 2;
 }
 .ba-after {
-  background: linear-gradient(135deg, #E8DDD0 0%, #D4C8B5 40%, #CBE4F2 100%);
   z-index: 1;
 }
-/* Frost/fog effect for before */
-.ba-before::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 30% 40%, rgba(255,255,255,0.3) 0%, transparent 50%),
-    radial-gradient(circle at 70% 60%, rgba(255,255,255,0.25) 0%, transparent 40%);
-}
-/* Clear window effect for after */
-.ba-after::before {
-  content: '';
-  position: absolute;
-  inset: 15%;
-  border: 2px solid rgba(255,255,255,0.5);
-  border-radius: 2px;
-  background: linear-gradient(180deg, rgba(135,206,250,0.2) 0%, rgba(176,224,255,0.15) 100%);
-}
-.ba-after::after {
-  content: '';
-  position: absolute;
-  top: 20%; left: 25%;
-  width: 30%; height: 20%;
-  background: rgba(255,255,255,0.3);
-  transform: rotate(-10deg);
-  filter: blur(8px);
+.ba-before img, .ba-after img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .ba-item:hover .ba-before {
   clip-path: inset(0 100% 0 0);
@@ -1190,35 +1019,6 @@ ul { list-style: none; }
   right: 12px;
   background: rgba(255,255,255,0.85);
   color: var(--prisma-navy);
-}
-
-/* Window SVGs in before/after */
-.ba-window-old {
-  width: 60%; height: 70%;
-  position: relative;
-  z-index: 3;
-}
-.ba-window-old::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border: 3px solid rgba(120,110,95,0.6);
-  background:
-    linear-gradient(135deg, rgba(180,170,155,0.4) 0%, rgba(160,150,135,0.3) 50%, rgba(140,130,115,0.4) 100%);
-}
-.ba-window-new {
-  width: 60%; height: 70%;
-  position: relative;
-  z-index: 1;
-}
-.ba-window-new::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border: 2px solid rgba(255,255,255,0.6);
-  background:
-    linear-gradient(180deg, rgba(180,220,250,0.25) 0%, rgba(200,235,255,0.15) 100%);
-  box-shadow: inset 0 0 30px rgba(255,255,255,0.1);
 }
 
 .ba-desc {
@@ -1457,6 +1257,10 @@ ul { list-style: none; }
 </head>
 <body>
 
+<noscript>
+  <p>Prisma Windows and Doors — Ottawa's trusted window and door experts. Energy Star certified products, 5-year warranty, flexible financing. Call (613) 555-0199 for a free quote.</p>
+</noscript>
+
 <!-- Scroll Progress -->
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
@@ -1586,7 +1390,9 @@ ul { list-style: none; }
     </div>
     <div class="windows-grid">
       <div class="window-card reveal-scale" data-delay="1">
-        <div class="window-card-img wimg-casement"><div class="window-pane"></div></div>
+        <div class="window-card-img">
+          <img src="https://images.unsplash.com/photo-1569089894086-afcbf643146c?w=600&q=80" alt="Casement window with crank-out design for maximum ventilation" loading="lazy" width="600" height="400">
+        </div>
         <span class="window-card-tag">Energy Star</span>
         <div class="window-card-body">
           <h3>Casement Windows</h3>
@@ -1594,7 +1400,9 @@ ul { list-style: none; }
         </div>
       </div>
       <div class="window-card reveal-scale" data-delay="2">
-        <div class="window-card-img wimg-doublehung"><div class="window-pane"></div></div>
+        <div class="window-card-img">
+          <img src="https://images.unsplash.com/photo-1544347120-e7b25160378a?w=600&q=80" alt="Double-hung window with classic tilt-in sash design" loading="lazy" width="600" height="400">
+        </div>
         <span class="window-card-tag">Classic</span>
         <div class="window-card-body">
           <h3>Double-Hung Windows</h3>
@@ -1602,9 +1410,8 @@ ul { list-style: none; }
         </div>
       </div>
       <div class="window-card reveal-scale" data-delay="3">
-        <div class="window-card-img wimg-bay">
-          <div class="window-pane"></div>
-          <div class="window-pane-center"></div>
+        <div class="window-card-img">
+          <img src="https://images.unsplash.com/photo-1696986324679-dad26261d579?w=600&q=80" alt="Bay and bow window creating panoramic views in a living room" loading="lazy" width="600" height="400">
         </div>
         <span class="window-card-tag">Premium</span>
         <div class="window-card-body">
@@ -1613,7 +1420,9 @@ ul { list-style: none; }
         </div>
       </div>
       <div class="window-card reveal-scale" data-delay="4">
-        <div class="window-card-img wimg-sliding"></div>
+        <div class="window-card-img">
+          <img src="https://images.unsplash.com/photo-1633109611134-c41b5c0bbc1a?w=600&q=80" alt="Sliding window with smooth horizontal glide mechanism" loading="lazy" width="600" height="400">
+        </div>
         <span class="window-card-tag">Space-Saving</span>
         <div class="window-card-body">
           <h3>Sliding Windows</h3>
@@ -1621,7 +1430,9 @@ ul { list-style: none; }
         </div>
       </div>
       <div class="window-card reveal-scale" data-delay="5">
-        <div class="window-card-img wimg-awning"><div class="window-pane"></div></div>
+        <div class="window-card-img">
+          <img src="https://images.unsplash.com/photo-1617596220547-e8bc4b244e94?w=600&q=80" alt="Awning window hinged at top for rain-proof ventilation" loading="lazy" width="600" height="400">
+        </div>
         <span class="window-card-tag">All-Weather</span>
         <div class="window-card-body">
           <h3>Awning Windows</h3>
@@ -1629,9 +1440,8 @@ ul { list-style: none; }
         </div>
       </div>
       <div class="window-card reveal-scale" data-delay="6">
-        <div class="window-card-img wimg-doors">
-          <div class="window-pane"></div>
-          <div class="door-handle"></div>
+        <div class="window-card-img">
+          <img src="https://images.unsplash.com/photo-1556367235-ddcdc5a3f785?w=600&q=80" alt="Premium entry and patio door with elegant glass panels" loading="lazy" width="600" height="400">
         </div>
         <span class="window-card-tag">Security</span>
         <div class="window-card-body">
@@ -1988,31 +1798,31 @@ ul { list-style: none; }
     <div class="ba-grid">
       <div class="ba-item reveal-scale" data-delay="1">
         <div class="ba-before">
-          <div class="ba-window-old"></div>
+          <img src="https://images.unsplash.com/photo-1606170034397-4f4f947335db?w=600&q=80" alt="Old worn windows before replacement" loading="lazy" width="600" height="400">
           <span class="ba-label ba-label-before">Before</span>
         </div>
         <div class="ba-after">
-          <div class="ba-window-new"></div>
+          <img src="https://images.unsplash.com/photo-1590587364967-5498d1185857?w=600&q=80" alt="New energy-efficient windows after installation" loading="lazy" width="600" height="400">
           <span class="ba-label ba-label-after">After</span>
         </div>
       </div>
       <div class="ba-item reveal-scale" data-delay="2">
-        <div class="ba-before" style="background:linear-gradient(180deg,#A89C8E 0%,#8E8275 50%,#7A6E62 100%)">
-          <div class="ba-window-old"></div>
+        <div class="ba-before">
+          <img src="https://images.unsplash.com/photo-1606170034397-4f4f947335db?w=600&q=80" alt="Drafty old windows needing replacement" loading="lazy" width="600" height="400" style="filter:sepia(0.3) brightness(0.85)">
           <span class="ba-label ba-label-before">Before</span>
         </div>
-        <div class="ba-after" style="background:linear-gradient(180deg,#E2DAD0 0%,#D5CABC 50%,#C5DDE8 100%)">
-          <div class="ba-window-new"></div>
+        <div class="ba-after">
+          <img src="https://images.unsplash.com/photo-1590587364967-5498d1185857?w=600&q=80" alt="Modern replacement windows with clear glass" loading="lazy" width="600" height="400" style="filter:saturate(1.1)">
           <span class="ba-label ba-label-after">After</span>
         </div>
       </div>
       <div class="ba-item reveal-scale" data-delay="3">
-        <div class="ba-before" style="background:linear-gradient(135deg,#B0A595 0%,#998E80 60%,#877B6E 100%)">
-          <div class="ba-window-old"></div>
+        <div class="ba-before">
+          <img src="https://images.unsplash.com/photo-1606170034397-4f4f947335db?w=600&q=80" alt="Outdated windows with poor insulation" loading="lazy" width="600" height="400" style="filter:grayscale(0.4) brightness(0.8)">
           <span class="ba-label ba-label-before">Before</span>
         </div>
-        <div class="ba-after" style="background:linear-gradient(135deg,#EDE5DA 0%,#D8CFC2 40%,#D0E8F0 100%)">
-          <div class="ba-window-new"></div>
+        <div class="ba-after">
+          <img src="https://images.unsplash.com/photo-1590587364967-5498d1185857?w=600&q=80" alt="Brand new vinyl windows with superior insulation" loading="lazy" width="600" height="400" style="filter:brightness(1.05)">
           <span class="ba-label ba-label-after">After</span>
         </div>
       </div>
