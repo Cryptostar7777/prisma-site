@@ -3,1852 +3,1738 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prisma Windows & Doors Inc. — Premium Installation in Ottawa</title>
-<meta name="description" content="Prisma Windows and Doors Inc. — Precision window and door installation in Ottawa, Ontario. Canadian craftsmanship, free estimates, and a commitment to quality.">
-<meta name="keywords" content="window installation Ottawa, door installation Ottawa, Prisma Windows, Canadian craftsmanship, bay windows, entry doors, Ottawa contractor">
-<meta property="og:title" content="Prisma Windows & Doors Inc. — Premium Installation in Ottawa">
-<meta property="og:description" content="Precision window and door installation. Canadian craftsmanship you can trust.">
+<title>Prisma Windows and Doors — Ottawa's Trusted Window & Door Experts</title>
+<meta name="description" content="Premium window and door installation in Ottawa-Gatineau. Energy Star certified, licensed & insured. Get a free quote today.">
+<meta name="keywords" content="windows Ottawa, doors Ottawa, window installation, door installation, Energy Star windows, Prisma Windows">
+<meta property="og:title" content="Prisma Windows and Doors — Ottawa's Trusted Experts">
+<meta property="og:description" content="Premium window and door installation in Ottawa-Gatineau. Free quotes, flexible financing, 5-year warranty.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://prismacanada.ca">
 <meta property="og:image" content="https://prismacanada.ca/og-image.jpg">
-<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://prismacanada.ca">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Prisma Windows and Doors Inc.",
+  "description": "Premium window and door installation serving the Greater Ottawa-Gatineau region.",
+  "url": "https://prismacanada.ca",
+  "telephone": "(613) 555-0199",
+  "email": "info@prismacanada.ca",
+  "areaServed": ["Ottawa","Nepean","Kanata","Orleans","Barrhaven","Gloucester","Stittsville","Manotick","Embrun","Rockland","Gatineau","Hull","Aylmer"],
+  "priceRange": "$$",
+  "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-14:00",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ottawa",
+    "addressRegion": "ON",
+    "addressCountry": "CA"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Window & Door Installation Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Window Installation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Door Installation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Window Replacement"}}
+    ]
+  }
+}
+</script>
 <style>
-/* ═══════════════════════════════════════════
-   PRISMA — Design System
-   ═══════════════════════════════════════════ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
   --prisma-red: #D32F2F;
-  --prisma-red-hover: #B71C1C;
   --prisma-dark: #3D4049;
   --prisma-navy: #2B2D3B;
+  --prisma-warm: #C8956C;
+  --prisma-light: #F8F6F3;
+  --prisma-cream: #FAF8F5;
   --prisma-white: #FFFFFF;
-  --prisma-light-gray: #F2F2F2;
-  --prisma-medium-gray: #6B6E76;
-  --prisma-warm-white: #FAF9F7;
-  --font-main: 'Montserrat', sans-serif;
-  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --prisma-gray: #8A8D96;
+  --prisma-border: #E8E5E0;
+  --prisma-warm-light: #F0E6DA;
+  --font: 'Montserrat', sans-serif;
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --nav-h: 72px;
 }
 
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  font-family: var(--font-main);
-  color: var(--prisma-dark);
-  background: var(--prisma-white);
-  line-height: 1.7;
-  overflow-x: hidden;
-}
-
-::selection {
-  background: var(--prisma-red);
-  color: var(--prisma-white);
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body { font-family: var(--font); color: var(--prisma-dark); background: var(--prisma-cream); line-height: 1.6; overflow-x: hidden; }
 img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+button { font-family: var(--font); cursor: pointer; border: none; }
+ul { list-style: none; }
 
 /* ═══════════════════════════════════════════
    TYPOGRAPHY
    ═══════════════════════════════════════════ */
-
-.brand-name {
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  font-weight: 600;
-}
-
-h1, h2, h3, h4 {
-  font-weight: 600;
-  line-height: 1.15;
-  color: var(--prisma-dark);
-}
-
-h1 { font-size: clamp(2.5rem, 6vw, 5rem); }
-h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
-h3 { font-size: clamp(1.2rem, 2vw, 1.6rem); }
-h4 { font-size: 1.1rem; }
-
-p {
-  color: var(--prisma-medium-gray);
-  font-weight: 400;
-  max-width: 640px;
-}
-
 .section-label {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--prisma-red);
-  margin-bottom: 1.5rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--prisma-warm);
+  margin-bottom: 1rem;
   display: block;
 }
-
-/* ═══════════════════════════════════════════
-   LAYOUT
-   ═══════════════════════════════════════════ */
-
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 clamp(1.5rem, 4vw, 4rem);
+.section-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--prisma-navy);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
 }
-
-.section {
-  padding: clamp(5rem, 10vw, 10rem) 0;
-}
-
-.section--dark {
-  background: var(--prisma-navy);
-  color: var(--prisma-white);
-}
-
-.section--dark h2,
-.section--dark h3,
-.section--dark h4 {
-  color: var(--prisma-white);
-}
-
-.section--dark p {
-  color: rgba(255,255,255,0.7);
-}
-
-.section--dark .section-label {
-  color: var(--prisma-red);
-}
-
-.section--gray {
-  background: var(--prisma-light-gray);
+.section-sub {
+  font-size: 1.05rem;
+  color: var(--prisma-gray);
+  max-width: 560px;
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 /* ═══════════════════════════════════════════
-   SCROLL ANIMATIONS
+   ANIMATIONS
    ═══════════════════════════════════════════ */
-
 .reveal {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.9s var(--ease-out-expo), transform 0.9s var(--ease-out-expo);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
 }
-
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
-
 .reveal-left {
   opacity: 0;
-  transform: translateX(-60px);
-  transition: opacity 0.9s var(--ease-out-expo), transform 0.9s var(--ease-out-expo);
+  transform: translateX(-50px);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
 }
-
 .reveal-left.visible {
   opacity: 1;
   transform: translateX(0);
 }
-
 .reveal-right {
   opacity: 0;
-  transform: translateX(60px);
-  transition: opacity 0.9s var(--ease-out-expo), transform 0.9s var(--ease-out-expo);
+  transform: translateX(50px);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
 }
-
 .reveal-right.visible {
   opacity: 1;
   transform: translateX(0);
 }
-
 .reveal-scale {
   opacity: 0;
   transform: scale(0.92);
-  transition: opacity 0.9s var(--ease-out-expo), transform 0.9s var(--ease-out-expo);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
 }
-
 .reveal-scale.visible {
   opacity: 1;
   transform: scale(1);
 }
-
-.stagger > * {
-  transition-delay: calc(var(--i, 0) * 0.1s);
-}
-
-/* ═══════════════════════════════════════════
-   BUTTONS
-   ═══════════════════════════════════════════ */
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem 2.5rem;
-  font-family: var(--font-main);
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  transition: all 0.4s var(--ease-out-expo);
-  position: relative;
-  overflow: hidden;
-}
-
-.btn--primary {
-  background: var(--prisma-red);
-  color: var(--prisma-white);
-}
-
-.btn--primary:hover {
-  background: var(--prisma-red-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(211, 47, 47, 0.3);
-}
-
-.btn--outline {
-  background: transparent;
-  color: var(--prisma-dark);
-  border: 2px solid var(--prisma-dark);
-}
-
-.btn--outline:hover {
-  background: var(--prisma-dark);
-  color: var(--prisma-white);
-  transform: translateY(-2px);
-}
-
-.btn--white-outline {
-  background: transparent;
-  color: var(--prisma-white);
-  border: 2px solid rgba(255,255,255,0.4);
-}
-
-.btn--white-outline:hover {
-  border-color: var(--prisma-white);
-  background: rgba(255,255,255,0.1);
-}
+[data-delay="1"] { transition-delay: 0.1s; }
+[data-delay="2"] { transition-delay: 0.2s; }
+[data-delay="3"] { transition-delay: 0.3s; }
+[data-delay="4"] { transition-delay: 0.4s; }
+[data-delay="5"] { transition-delay: 0.5s; }
+[data-delay="6"] { transition-delay: 0.6s; }
 
 /* ═══════════════════════════════════════════
    NAVIGATION
    ═══════════════════════════════════════════ */
-
 .nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-h);
   z-index: 1000;
-  padding: 1.5rem 0;
-  transition: all 0.5s var(--ease-out-expo);
-}
-
-.nav--scrolled {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  padding: 1rem 0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
-}
-
-.nav__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1280px;
-  margin: 0 auto;
   padding: 0 clamp(1.5rem, 4vw, 4rem);
+  transition: background 0.4s, box-shadow 0.4s, backdrop-filter 0.4s;
 }
-
-.nav__logo {
+.nav.scrolled {
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: 0 1px 0 var(--prisma-border);
+}
+.nav-logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.65rem;
   z-index: 1001;
 }
-
-.nav__logo-icon {
-  width: 42px;
-  height: 42px;
-}
-
-.nav__logo-text {
+.nav-logo svg { width: 36px; height: 36px; }
+.nav-logo-text {
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--prisma-white);
-  transition: color 0.5s;
+  color: var(--prisma-navy);
 }
-
-.nav--scrolled .nav__logo-text {
-  color: var(--prisma-dark);
-}
-
-.nav__links {
+.nav-links {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
-  list-style: none;
+  gap: 2.2rem;
 }
-
-.nav__links a {
-  font-size: 0.8rem;
+.nav-links a {
+  font-size: 0.82rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.8);
+  letter-spacing: 0.05em;
+  color: var(--prisma-dark);
   transition: color 0.3s;
   position: relative;
 }
-
-.nav--scrolled .nav__links a {
-  color: var(--prisma-medium-gray);
-}
-
-.nav__links a:hover {
-  color: var(--prisma-white);
-}
-
-.nav--scrolled .nav__links a:hover {
-  color: var(--prisma-dark);
-}
-
-.nav__links a::after {
+.nav-links a::after {
   content: '';
   position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--prisma-red);
-  transition: width 0.3s var(--ease-out-expo);
+  bottom: -4px; left: 0;
+  width: 0; height: 1.5px;
+  background: var(--prisma-warm);
+  transition: width 0.3s var(--ease);
 }
-
-.nav__links a:hover::after {
-  width: 100%;
-}
-
-.nav__cta {
-  font-size: 0.75rem !important;
-  padding: 0.7rem 1.5rem;
-  background: var(--prisma-red);
+.nav-links a:hover { color: var(--prisma-navy); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  background: var(--prisma-navy);
   color: var(--prisma-white) !important;
-  letter-spacing: 0.08em;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
   font-weight: 600;
-  text-transform: uppercase;
-  transition: all 0.3s;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.08em !important;
+  transition: background 0.3s, transform 0.3s !important;
 }
+.nav-cta::after { display: none !important; }
+.nav-cta:hover { background: var(--prisma-dark) !important; transform: translateY(-1px); }
 
-.nav__cta:hover {
-  background: var(--prisma-red-hover);
-  color: var(--prisma-white) !important;
-  transform: translateY(-1px);
-}
-
-.nav__cta::after { display: none !important; }
-
-/* Mobile Menu */
-.nav__hamburger {
+/* Hamburger */
+.hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
-  cursor: pointer;
-  z-index: 1001;
   background: none;
-  border: none;
-  padding: 5px;
+  padding: 8px;
+  z-index: 1001;
 }
-
-.nav__hamburger span {
-  width: 24px;
-  height: 2px;
-  background: var(--prisma-white);
-  transition: all 0.3s;
+.hamburger span {
+  width: 22px; height: 2px;
+  background: var(--prisma-navy);
+  transition: transform 0.3s, opacity 0.3s;
+  display: block;
 }
+.hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-.nav--scrolled .nav__hamburger span {
-  background: var(--prisma-dark);
-}
-
-.nav__hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.nav__hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.nav__hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* Mobile overlay */
-.nav__mobile-overlay {
+.mobile-menu {
   display: none;
   position: fixed;
   inset: 0;
-  background: var(--prisma-navy);
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(24px);
   z-index: 999;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.nav__mobile-overlay.active {
-  display: flex;
-}
-
-.nav__mobile-links {
-  list-style: none;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
 }
-
-.nav__mobile-links a {
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--prisma-white);
-  transition: color 0.3s;
-}
-
-.nav__mobile-links a:hover {
-  color: var(--prisma-red);
-}
-
-@media (max-width: 900px) {
-  .nav__links { display: none; }
-  .nav__hamburger { display: flex; }
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--prisma-navy);
+  letter-spacing: 0.05em;
 }
 
 /* ═══════════════════════════════════════════
-   HERO SECTION
+   HERO
    ═══════════════════════════════════════════ */
-
 .hero {
-  position: relative;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background: var(--prisma-navy);
-  overflow: hidden;
-}
-
-/* Sunlight animation through window frame */
-.hero__light {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.hero__light::before {
-  content: '';
-  position: absolute;
-  top: -20%;
-  right: -10%;
-  width: 70%;
-  height: 140%;
-  background: linear-gradient(
-    135deg,
-    transparent 0%,
-    rgba(255, 220, 160, 0.03) 20%,
-    rgba(255, 200, 120, 0.06) 40%,
-    rgba(255, 180, 80, 0.04) 60%,
-    transparent 80%
-  );
-  transform: rotate(-15deg);
-  animation: sunlight 8s ease-in-out infinite alternate;
-}
-
-.hero__light::after {
-  content: '';
-  position: absolute;
-  top: 10%;
-  right: 5%;
-  width: 50%;
-  height: 80%;
-  background: linear-gradient(
-    145deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.02) 30%,
-    rgba(255, 220, 160, 0.04) 50%,
-    transparent 70%
-  );
-  animation: sunlight-secondary 12s ease-in-out infinite alternate;
-}
-
-@keyframes sunlight {
-  0% { opacity: 0.6; transform: rotate(-15deg) translateX(0); }
-  100% { opacity: 1; transform: rotate(-12deg) translateX(30px); }
-}
-
-@keyframes sunlight-secondary {
-  0% { opacity: 0.4; transform: translateY(0); }
-  100% { opacity: 0.8; transform: translateY(-20px); }
-}
-
-/* Window frame silhouette */
-.hero__window-frame {
-  position: absolute;
-  top: 50%;
-  right: 8%;
-  transform: translateY(-50%);
-  width: clamp(280px, 30vw, 480px);
-  height: clamp(350px, 38vw, 600px);
-  border: 3px solid rgba(255,255,255,0.06);
-  pointer-events: none;
-}
-
-.hero__window-frame::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 3px;
-  height: 100%;
-  background: rgba(255,255,255,0.06);
-  transform: translateX(-50%);
-}
-
-.hero__window-frame::after {
-  content: '';
-  position: absolute;
-  top: 40%;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: rgba(255,255,255,0.06);
-}
-
-/* Subtle light rays through window */
-.hero__rays {
-  position: absolute;
-  top: 50%;
-  right: 8%;
-  transform: translateY(-50%);
-  width: clamp(280px, 30vw, 480px);
-  height: clamp(350px, 38vw, 600px);
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.hero__rays::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: conic-gradient(
-    from 200deg at 60% 40%,
-    transparent 0deg,
-    rgba(255, 220, 160, 0.03) 10deg,
-    transparent 40deg,
-    rgba(255, 220, 160, 0.02) 60deg,
-    transparent 80deg,
-    rgba(255, 220, 160, 0.03) 100deg,
-    transparent 120deg
-  );
-  animation: rays-rotate 20s linear infinite;
-}
-
-@keyframes rays-rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.hero__content {
-  position: relative;
-  z-index: 2;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 clamp(1.5rem, 4vw, 4rem);
-  padding-top: 6rem;
-}
-
-.hero__label {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: 2rem;
-}
-
-.hero__label::before {
-  content: '';
-  width: 40px;
-  height: 1px;
-  background: var(--prisma-red);
-}
-
-.hero__title {
-  color: var(--prisma-white);
-  max-width: 700px;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
-  line-height: 1.05;
-}
-
-.hero__title span {
-  display: block;
-  font-weight: 300;
-  font-size: 0.5em;
-  letter-spacing: 0.06em;
-  margin-top: 0.5rem;
-  color: rgba(255,255,255,0.6);
-}
-
-.hero__subtitle {
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
-  color: rgba(255,255,255,0.5);
-  max-width: 480px;
-  margin-bottom: 3rem;
-  line-height: 1.8;
-  font-weight: 300;
-}
-
-.hero__actions {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.hero__scroll-hint {
-  position: absolute;
-  bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  color: rgba(255,255,255,0.3);
-  font-size: 0.7rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  animation: float 3s ease-in-out infinite;
-}
-
-.hero__scroll-hint svg {
-  width: 20px;
-  height: 20px;
-  stroke: rgba(255,255,255,0.3);
-}
-
-@keyframes float {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(8px); }
-}
-
-@media (max-width: 768px) {
-  .hero__window-frame,
-  .hero__rays { display: none; }
-}
-
-/* ═══════════════════════════════════════════
-   ABOUT SECTION
-   ═══════════════════════════════════════════ */
-
-.about__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(3rem, 6vw, 8rem);
   align-items: center;
-}
-
-.about__text h2 {
-  margin-bottom: 1.5rem;
-}
-
-.about__text p {
-  margin-bottom: 1.5rem;
-}
-
-.about__visual {
   position: relative;
-  height: clamp(400px, 50vw, 600px);
-}
-
-.about__visual-box {
-  position: absolute;
-  background: var(--prisma-light-gray);
   overflow: hidden;
 }
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 80%, rgba(200,149,108,0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 80% 20%, rgba(200,149,108,0.08) 0%, transparent 60%),
+    linear-gradient(135deg, var(--prisma-cream) 0%, #FFF8F2 30%, #F5EDE4 60%, var(--prisma-cream) 100%);
+  z-index: 0;
+}
+/* Decorative window light rays */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -10%; right: 10%;
+  width: 500px; height: 700px;
+  background: linear-gradient(160deg,
+    rgba(200,149,108,0.06) 0%,
+    rgba(255,245,235,0.15) 30%,
+    rgba(200,149,108,0.04) 60%,
+    transparent 100%
+  );
+  transform: rotate(-15deg);
+  z-index: 0;
+  pointer-events: none;
+}
 
-.about__visual-box--main {
-  width: 80%;
-  height: 75%;
-  right: 0;
-  top: 0;
-  background: linear-gradient(135deg, var(--prisma-light-gray) 0%, #E8E6E3 100%);
+.hero-content {
+  padding: calc(var(--nav-h) + 4rem) clamp(2rem, 6vw, 8rem) 4rem;
+  z-index: 1;
+  max-width: 680px;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(200,149,108,0.12);
+  padding: 0.45rem 1rem;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--prisma-warm);
+  margin-bottom: 2rem;
+}
+.hero-badge svg { width: 14px; height: 14px; }
+.hero h1 {
+  font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+  font-weight: 900;
+  line-height: 1.08;
+  color: var(--prisma-navy);
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+}
+.hero h1 .accent { color: var(--prisma-warm); }
+.hero-sub {
+  font-size: 1.15rem;
+  color: var(--prisma-gray);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  max-width: 480px;
+  font-weight: 400;
+}
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--prisma-dark);
+}
+.hero-trust-item svg { width: 18px; height: 18px; color: var(--prisma-warm); flex-shrink: 0; }
+
+/* Quote Form */
+.hero-form-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: calc(var(--nav-h) + 3rem) clamp(1.5rem, 3vw, 4rem) 3rem;
+  z-index: 1;
 }
-
-.about__visual-box--accent {
-  width: 45%;
-  height: 40%;
-  left: 0;
-  bottom: 0;
-  background: var(--prisma-navy);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+.quote-form {
+  background: var(--prisma-white);
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 4px 40px rgba(43,45,59,0.06), 0 1px 3px rgba(43,45,59,0.04);
+  border: 1px solid var(--prisma-border);
+  position: relative;
 }
-
-.about__visual-box--accent p {
-  color: rgba(255,255,255,0.7);
+.quote-form::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 2rem; right: 2rem;
+  height: 3px;
+  background: linear-gradient(90deg, var(--prisma-warm), var(--prisma-red));
+  border-radius: 0 0 4px 4px;
+}
+.form-header {
+  margin-bottom: 1.75rem;
+}
+.form-header h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--prisma-navy);
+  margin-bottom: 0.35rem;
+}
+.form-header p {
   font-size: 0.85rem;
+  color: var(--prisma-gray);
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--prisma-dark);
+  margin-bottom: 0.4rem;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--prisma-border);
+  border-radius: 8px;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  color: var(--prisma-dark);
+  background: var(--prisma-cream);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--prisma-warm);
+  box-shadow: 0 0 0 3px rgba(200,149,108,0.12);
+  background: var(--prisma-white);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #B8BAC0;
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+.form-submit {
+  width: 100%;
+  padding: 0.9rem;
+  background: var(--prisma-navy);
+  color: var(--prisma-white);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.form-submit:hover {
+  background: var(--prisma-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(43,45,59,0.2);
+}
+.form-submit:active { transform: translateY(0); }
+.form-submit.success {
+  background: #2E7D32;
+  pointer-events: none;
+}
+.form-note {
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--prisma-gray);
+  margin-top: 0.75rem;
+}
+.form-error {
+  color: var(--prisma-red);
+  font-size: 0.72rem;
+  margin-top: 0.25rem;
+  display: none;
+}
+.form-group.error input,
+.form-group.error select {
+  border-color: var(--prisma-red);
+}
+.form-group.error .form-error {
+  display: block;
+}
+
+/* ═══════════════════════════════════════════
+   SECTION WRAPPER
+   ═══════════════════════════════════════════ */
+.section {
+  padding: clamp(4rem, 8vw, 7rem) clamp(1.5rem, 4vw, 4rem);
+}
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-header {
+  margin-bottom: 3.5rem;
+}
+.section-header.center { text-align: center; }
+.section-header.center .section-sub { margin: 0 auto; }
+
+/* ═══════════════════════════════════════════
+   WINDOW TYPES
+   ═══════════════════════════════════════════ */
+#windows { background: var(--prisma-white); }
+.windows-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.window-card {
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--prisma-cream);
+  border: 1px solid var(--prisma-border);
+  transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+  position: relative;
+  cursor: pointer;
+}
+.window-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(43,45,59,0.1);
+}
+.window-card-img {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+/* CSS-generated window "photos" */
+.window-card-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: linear-gradient(to top, rgba(43,45,59,0.6) 0%, transparent 60%);
+  transition: opacity 0.4s;
+}
+.window-card:hover .window-card-img::after { opacity: 1; }
+
+.wimg-casement {
+  background:
+    linear-gradient(135deg, #E8DDD0 0%, #D4C4B0 40%, #C8B89E 100%);
+}
+.wimg-casement::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 2px;
+  background:
+    linear-gradient(180deg, rgba(173,216,230,0.3) 0%, rgba(135,206,235,0.15) 40%, rgba(200,220,240,0.25) 100%);
+  box-shadow: inset 0 0 40px rgba(255,255,255,0.2);
+}
+.wimg-casement .window-pane {
+  position: absolute;
+  top: 20px; bottom: 20px;
+  left: 50%;
+  width: 2px;
+  background: rgba(255,255,255,0.5);
+}
+
+.wimg-doublehung {
+  background:
+    linear-gradient(180deg, #DED3C4 0%, #C9B9A5 50%, #BFAD96 100%);
+}
+.wimg-doublehung::before {
+  content: '';
+  position: absolute;
+  inset: 18px;
+  border: 2.5px solid rgba(180,160,130,0.6);
+  background:
+    linear-gradient(180deg, rgba(200,225,245,0.25) 0%, rgba(180,210,235,0.2) 50%, rgba(200,225,245,0.25) 100%);
+}
+.wimg-doublehung .window-pane {
+  position: absolute;
+  left: 18px; right: 18px;
+  top: 50%;
+  height: 3px;
+  background: rgba(180,160,130,0.6);
+}
+.wimg-doublehung .window-pane::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: 50%;
+  width: 2.5px; height: calc(100% + 100%);
+  transform: translateX(-50%);
+  background: rgba(180,160,130,0.4);
+}
+
+.wimg-bay {
+  background:
+    linear-gradient(135deg, #E2D6C8 0%, #D6C7B5 30%, #CAB9A3 70%, #E2D6C8 100%);
+}
+.wimg-bay::before {
+  content: '';
+  position: absolute;
+  top: 15px; bottom: 15px;
+  left: 20%; right: 20%;
+  background:
+    linear-gradient(180deg, rgba(170,210,240,0.3) 0%, rgba(200,230,255,0.2) 100%);
+  border: 2px solid rgba(255,255,255,0.4);
+  clip-path: polygon(0 0, 25% 0, 25% 100%, 0 100%);
+}
+.wimg-bay .window-pane {
+  position: absolute;
+  top: 15px; bottom: 15px;
+  left: calc(20% + 1px); right: calc(20% + 1px);
+  display: flex;
+}
+.wimg-bay .window-pane::before,
+.wimg-bay .window-pane::after {
+  content: '';
+  flex: 1;
+  border: 2px solid rgba(255,255,255,0.4);
+  margin: 0 1px;
+  background: linear-gradient(180deg, rgba(170,210,240,0.25) 0%, rgba(200,230,255,0.15) 100%);
+}
+.wimg-bay .window-pane-center {
+  position: absolute;
+  top: 15px; bottom: 15px;
+  left: calc(20% + 33.3%); right: calc(20% + 33.3%);
+  min-width: 33.3%;
+  border: 2px solid rgba(255,255,255,0.4);
+  background: linear-gradient(180deg, rgba(170,210,240,0.3) 0%, rgba(200,230,255,0.2) 100%);
+}
+
+.wimg-sliding {
+  background:
+    linear-gradient(90deg, #E0D3C4 0%, #D2C2AE 50%, #E0D3C4 100%);
+}
+.wimg-sliding::before {
+  content: '';
+  position: absolute;
+  inset: 16px;
+  border: 2px solid rgba(200,180,155,0.5);
+  background:
+    linear-gradient(90deg,
+      rgba(180,215,240,0.25) 0%, rgba(180,215,240,0.25) 48%,
+      rgba(200,180,155,0.5) 48%, rgba(200,180,155,0.5) 52%,
+      rgba(190,220,245,0.2) 52%, rgba(190,220,245,0.2) 100%
+    );
+}
+
+.wimg-awning {
+  background:
+    linear-gradient(180deg, #DDD1C2 0%, #CDBFAD 60%, #C5B59F 100%);
+}
+.wimg-awning::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  border: 2px solid rgba(190,175,150,0.5);
+  background:
+    linear-gradient(180deg,
+      rgba(175,210,240,0.3) 0%, rgba(175,210,240,0.3) 35%,
+      rgba(190,175,150,0.5) 35%, rgba(190,175,150,0.5) 36%,
+      rgba(185,215,240,0.2) 36%, rgba(185,215,240,0.2) 100%
+    );
+}
+.wimg-awning .window-pane {
+  position: absolute;
+  top: 20px;
+  left: 20px; right: 20px;
+  height: 35%;
+  border-bottom: 2px solid rgba(190,175,150,0.5);
+  background: transparent;
+}
+
+.wimg-doors {
+  background:
+    linear-gradient(180deg, #E5DAC9 0%, #D0C0AA 50%, #C8B69C 100%);
+}
+.wimg-doors::before {
+  content: '';
+  position: absolute;
+  top: 12px; bottom: 12px;
+  left: 30%; right: 30%;
+  background:
+    linear-gradient(180deg, rgba(180,150,110,0.4) 0%, rgba(160,130,90,0.5) 100%);
+  border-radius: 80px 80px 0 0;
+  border: 2px solid rgba(180,150,110,0.3);
+}
+.wimg-doors .window-pane {
+  position: absolute;
+  top: 28px; bottom: 45%;
+  left: calc(30% + 10px); right: calc(30% + 10px);
+  background: linear-gradient(180deg, rgba(200,225,245,0.3) 0%, rgba(200,225,245,0.15) 100%);
+  border-radius: 70px 70px 0 0;
+  border: 1.5px solid rgba(255,255,255,0.3);
+}
+.wimg-doors .door-handle {
+  position: absolute;
+  top: 55%; right: calc(30% + 16px);
+  width: 6px; height: 20px;
+  background: rgba(200,180,140,0.7);
+  border-radius: 3px;
+}
+
+.window-card-body {
+  padding: 1.5rem;
+}
+.window-card-body h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--prisma-navy);
+  margin-bottom: 0.5rem;
+}
+.window-card-body p {
+  font-size: 0.88rem;
+  color: var(--prisma-gray);
   line-height: 1.6;
 }
-
-.about__maple-leaf {
-  width: 120px;
-  height: 120px;
-  opacity: 0.08;
+.window-card-tag {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--prisma-warm);
+  text-transform: uppercase;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.window-card:hover .window-card-tag {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.about__values {
+/* ═══════════════════════════════════════════
+   WHY PRISMA
+   ═══════════════════════════════════════════ */
+#why { background: var(--prisma-cream); position: relative; overflow: hidden; }
+#why::before {
+  content: '🍁';
+  position: absolute;
+  font-size: 320px;
+  right: -60px; bottom: -80px;
+  opacity: 0.03;
+  pointer-events: none;
+}
+.why-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.why-feature {
+  text-align: center;
+  padding: 2rem 1.25rem;
+  border-radius: 14px;
+  background: var(--prisma-white);
+  border: 1px solid var(--prisma-border);
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s;
+}
+.why-feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(43,45,59,0.06);
+}
+.why-feature-icon {
+  width: 56px; height: 56px;
+  margin: 0 auto 1.2rem;
+  background: var(--prisma-cream);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.why-feature-icon svg { width: 26px; height: 26px; color: var(--prisma-warm); }
+.why-feature h4 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--prisma-navy);
+  margin-bottom: 0.5rem;
+}
+.why-feature p {
+  font-size: 0.82rem;
+  color: var(--prisma-gray);
+  line-height: 1.55;
+}
+
+/* Counters */
+.counters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 3rem 0 0;
+  border-top: 1px solid var(--prisma-border);
+}
+.counter-item { text-align: center; }
+.counter-num {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 900;
+  color: var(--prisma-navy);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+.counter-num .counter-suffix { font-weight: 700; }
+.counter-label {
+  font-size: 0.8rem;
+  color: var(--prisma-gray);
+  font-weight: 500;
+}
+
+/* ═══════════════════════════════════════════
+   WARRANTY
+   ═══════════════════════════════════════════ */
+#warranty {
+  background: var(--prisma-navy);
+  color: var(--prisma-white);
+  position: relative;
+  overflow: hidden;
+}
+#warranty::before {
+  content: '';
+  position: absolute;
+  top: -50%; right: -20%;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,149,108,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+#warranty .section-label { color: var(--prisma-warm); }
+#warranty .section-title { color: var(--prisma-white); }
+#warranty .section-sub { color: rgba(255,255,255,0.6); }
+
+.warranty-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 3rem;
 }
-
-.about__value {
-  text-align: center;
-  padding: 2rem 1rem;
+.warranty-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 2.25rem;
+  transition: background 0.3s, transform 0.3s;
 }
-
-.about__value-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--prisma-red);
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-
-.about__value-label {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--prisma-medium-gray);
-}
-
-@media (max-width: 900px) {
-  .about__grid { grid-template-columns: 1fr; }
-  .about__visual { height: 350px; }
-  .about__values { grid-template-columns: repeat(3, 1fr); }
-}
-
-@media (max-width: 500px) {
-  .about__values { grid-template-columns: 1fr; gap: 0; }
-}
-
-/* ═══════════════════════════════════════════
-   SERVICES SECTION
-   ═══════════════════════════════════════════ */
-
-.services__intro {
-  max-width: 600px;
-  margin-bottom: 4rem;
-}
-
-.services__intro p {
-  margin-top: 1rem;
-}
-
-.services__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
-.service-card {
-  background: var(--prisma-white);
-  border: 1px solid rgba(0,0,0,0.06);
-  padding: 2.5rem 2rem;
-  transition: all 0.5s var(--ease-out-expo);
-  position: relative;
-  overflow: hidden;
-}
-
-.service-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: var(--prisma-red);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s var(--ease-out-expo);
-}
-
-.service-card:hover {
+.warranty-card:hover {
+  background: rgba(255,255,255,0.08);
   transform: translateY(-4px);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
-  border-color: transparent;
 }
-
-.service-card:hover::before {
-  transform: scaleX(1);
+.warranty-icon {
+  width: 52px; height: 52px;
+  background: rgba(200,149,108,0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
 }
-
-.service-card__icon {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 1.5rem;
-  color: var(--prisma-dark);
-  transition: color 0.3s;
+.warranty-icon svg { width: 24px; height: 24px; color: var(--prisma-warm); }
+.warranty-card h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
 }
-
-.service-card:hover .service-card__icon {
-  color: var(--prisma-red);
-}
-
-.service-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.75rem;
-}
-
-.service-card p {
-  font-size: 0.9rem;
-  line-height: 1.7;
-}
-
-.service-card__list {
-  list-style: none;
-  margin-top: 1rem;
+.warranty-card p {
   font-size: 0.85rem;
-  color: var(--prisma-medium-gray);
-}
-
-.service-card__list li {
-  padding: 0.3rem 0;
-  padding-left: 1rem;
-  position: relative;
-}
-
-.service-card__list li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 4px;
-  height: 4px;
-  background: var(--prisma-red);
-  border-radius: 50%;
-  transform: translateY(-50%);
+  color: rgba(255,255,255,0.55);
+  line-height: 1.65;
 }
 
 /* ═══════════════════════════════════════════
-   PROCESS SECTION
+   PROCESS
    ═══════════════════════════════════════════ */
-
-.process__header {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 5rem;
-}
-
-.process__header p {
-  margin: 1rem auto 0;
-}
-
-.process__timeline {
+#process { background: var(--prisma-white); }
+.process-timeline {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
   position: relative;
 }
-
-.process__timeline::before {
+.process-timeline::before {
   content: '';
   position: absolute;
-  top: 40px;
+  top: 42px;
   left: 12.5%;
   right: 12.5%;
   height: 2px;
-  background: rgba(255,255,255,0.15);
+  background: var(--prisma-border);
 }
-
-.process__step {
+.process-step {
   text-align: center;
-  padding: 0 1.5rem;
   position: relative;
+  padding: 0 1rem;
 }
-
-.process__step-number {
-  width: 80px;
-  height: 80px;
-  border: 2px solid rgba(255,255,255,0.2);
+.process-step-num {
+  width: 84px; height: 84px;
+  margin: 0 auto 1.5rem;
+  background: var(--prisma-cream);
+  border: 2px solid var(--prisma-border);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 2rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--prisma-white);
-  transition: all 0.5s var(--ease-out-expo);
   position: relative;
-  z-index: 2;
-  background: var(--prisma-navy);
+  z-index: 1;
+  transition: border-color 0.4s, background 0.4s;
 }
-
-.process__step:hover .process__step-number {
-  border-color: var(--prisma-red);
-  color: var(--prisma-red);
-  transform: scale(1.1);
+.process-step:hover .process-step-num {
+  border-color: var(--prisma-warm);
+  background: rgba(200,149,108,0.08);
 }
-
-.process__step h3 {
-  font-size: 1.05rem;
-  margin-bottom: 0.75rem;
-  color: var(--prisma-white);
+.process-step-num svg { width: 32px; height: 32px; color: var(--prisma-warm); }
+.process-step .step-number {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--prisma-warm);
+  margin-bottom: 0.6rem;
 }
-
-.process__step p {
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.5);
-  max-width: 220px;
-  margin: 0 auto;
+.process-step h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--prisma-navy);
+  margin-bottom: 0.5rem;
 }
-
-.process__step-icon {
-  width: 32px;
-  height: 32px;
-  margin: 0 auto 0.5rem;
-  color: var(--prisma-red);
-}
-
-@media (max-width: 768px) {
-  .process__timeline {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-  .process__timeline::before {
-    top: 0;
-    bottom: 0;
-    left: 40px;
-    right: auto;
-    width: 2px;
-    height: auto;
-  }
-  .process__step {
-    text-align: left;
-    padding-left: 100px;
-  }
-  .process__step-number {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0;
-  }
+.process-step p {
+  font-size: 0.82rem;
+  color: var(--prisma-gray);
+  line-height: 1.6;
 }
 
 /* ═══════════════════════════════════════════
-   ESTIMATE CALCULATOR
+   FINANCING
    ═══════════════════════════════════════════ */
-
-.calculator {
-  background: var(--prisma-warm-white);
-}
-
-.calculator__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(3rem, 5vw, 6rem);
-  align-items: start;
-}
-
-.calculator__intro h2 {
-  margin-bottom: 1rem;
-}
-
-.calculator__intro p {
-  margin-bottom: 1.5rem;
-}
-
-.calculator__disclaimer {
-  font-size: 0.8rem;
-  color: var(--prisma-medium-gray);
-  font-style: italic;
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(0,0,0,0.08);
-}
-
-.calculator__form {
-  background: var(--prisma-white);
-  padding: clamp(2rem, 4vw, 3rem);
-  box-shadow: 0 20px 80px rgba(0,0,0,0.06);
+#financing {
+  background:
+    linear-gradient(135deg, #FAF4ED 0%, #F5EDE3 50%, #F0E8DD 100%);
   position: relative;
 }
-
-.calc-field {
-  margin-bottom: 2rem;
+.financing-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
 }
-
-.calc-field__label {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
+.fin-card {
+  background: var(--prisma-white);
+  border-radius: 14px;
+  padding: 2.25rem;
+  border: 1px solid var(--prisma-border);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+.fin-card:nth-child(2) {
+  border-color: var(--prisma-warm);
+  box-shadow: 0 4px 20px rgba(200,149,108,0.12);
+}
+.fin-card:nth-child(2)::before {
+  content: 'Most Popular';
+  position: absolute;
+  top: -10px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--prisma-warm);
+  color: var(--prisma-white);
+  font-size: 0.65rem;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--prisma-dark);
-  margin-bottom: 0.75rem;
+  padding: 0.3rem 1rem;
+  border-radius: 100px;
 }
-
-.calc-field__options {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+.fin-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(43,45,59,0.08);
 }
-
-.calc-option {
-  flex: 1;
-  min-width: 100px;
-  padding: 1rem;
-  text-align: center;
-  border: 2px solid rgba(0,0,0,0.08);
-  background: var(--prisma-white);
-  cursor: pointer;
-  transition: all 0.3s var(--ease-out-expo);
-  font-family: var(--font-main);
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--prisma-dark);
-}
-
-.calc-option:hover {
-  border-color: var(--prisma-dark);
-}
-
-.calc-option.active {
-  border-color: var(--prisma-red);
-  background: rgba(211, 47, 47, 0.04);
-  color: var(--prisma-red);
-}
-
-.calc-option__icon {
-  display: block;
-  margin-bottom: 0.3rem;
-  font-size: 1.4rem;
-}
-
-.calc-quantity {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.calc-quantity__btn {
-  width: 48px;
-  height: 48px;
-  border: 2px solid rgba(0,0,0,0.08);
-  background: var(--prisma-white);
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--prisma-dark);
+.fin-card-icon {
+  width: 60px; height: 60px;
+  margin: 0 auto 1.2rem;
+  background: var(--prisma-cream);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s;
-  font-family: var(--font-main);
 }
-
-.calc-quantity__btn:hover {
-  border-color: var(--prisma-dark);
-  background: var(--prisma-dark);
-  color: var(--prisma-white);
-}
-
-.calc-quantity__value {
-  font-size: 2rem;
+.fin-card-icon svg { width: 28px; height: 28px; color: var(--prisma-warm); }
+.fin-card h4 {
+  font-size: 1rem;
   font-weight: 700;
-  min-width: 50px;
+  color: var(--prisma-navy);
+  margin-bottom: 0.4rem;
+}
+.fin-card p {
+  font-size: 0.85rem;
+  color: var(--prisma-gray);
+  line-height: 1.6;
+}
+.fin-cta {
   text-align: center;
 }
-
-.calc-result {
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   background: var(--prisma-navy);
-  padding: 2rem;
-  margin-top: 1rem;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.5s var(--ease-out-expo);
-}
-
-.calc-result.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.calc-result__label {
-  font-size: 0.7rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: 0.5rem;
-}
-
-.calc-result__price {
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
-  font-weight: 700;
   color: var(--prisma-white);
+  padding: 0.95rem 2.2rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
 }
-
-.calc-result__note {
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.4);
-  margin-top: 0.5rem;
+.btn-primary:hover {
+  background: var(--prisma-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(43,45,59,0.2);
 }
-
-.calc-result__cta {
+.btn-primary svg { width: 16px; height: 16px; }
+.fin-partner {
+  text-align: center;
   margin-top: 1.5rem;
-}
-
-@media (max-width: 900px) {
-  .calculator__grid { grid-template-columns: 1fr; }
+  font-size: 0.78rem;
+  color: var(--prisma-gray);
 }
 
 /* ═══════════════════════════════════════════
    TESTIMONIALS
    ═══════════════════════════════════════════ */
-
-.testimonials__header {
-  margin-bottom: 4rem;
-}
-
-.testimonials__header p {
-  margin-top: 1rem;
-}
-
-.testimonials__grid {
+#testimonials { background: var(--prisma-white); }
+.testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-.testimonial-card {
-  padding: 2.5rem;
-  border: 1px solid rgba(0,0,0,0.06);
-  background: var(--prisma-white);
-  transition: all 0.5s var(--ease-out-expo);
-  position: relative;
-}
-
-.testimonial-card:hover {
-  box-shadow: 0 20px 60px rgba(0,0,0,0.06);
-  transform: translateY(-3px);
-}
-
-.testimonial-card__quote {
-  font-size: 3rem;
-  line-height: 1;
-  color: var(--prisma-red);
-  opacity: 0.3;
-  font-family: Georgia, serif;
-  margin-bottom: 1rem;
-}
-
-.testimonial-card p {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  color: var(--prisma-dark);
-  margin-bottom: 1.5rem;
-  font-style: italic;
-}
-
-.testimonial-card__author {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.testimonial-card__avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--prisma-light-gray);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--prisma-dark);
-}
-
-.testimonial-card__name {
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--prisma-dark);
-}
-
-.testimonial-card__location {
-  font-size: 0.8rem;
-  color: var(--prisma-medium-gray);
-}
-
-.testimonial-card__stars {
-  color: var(--prisma-red);
-  font-size: 0.85rem;
-  letter-spacing: 2px;
-}
-
-@media (max-width: 768px) {
-  .testimonials__grid { grid-template-columns: 1fr; }
-}
-
-/* ═══════════════════════════════════════════
-   GALLERY
-   ═══════════════════════════════════════════ */
-
-.gallery__header {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 4rem;
-}
-
-.gallery__header p {
-  margin: 1rem auto 0;
-}
-
-.gallery__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 200px);
-  gap: 1rem;
-}
-
-.gallery__item {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.gallery__item:nth-child(1) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.gallery__item:nth-child(4) {
-  grid-column: span 2;
-}
-
-.gallery__item-bg {
-  position: absolute;
-  inset: 0;
-  transition: transform 0.8s var(--ease-out-expo);
-}
-
-.gallery__item:hover .gallery__item-bg {
-  transform: scale(1.05);
-}
-
-/* Unique gradients simulating project photos */
-.gallery__item:nth-child(1) .gallery__item-bg {
-  background: linear-gradient(135deg, #C9B99A 0%, #A89279 40%, #8B7355 100%);
-}
-.gallery__item:nth-child(2) .gallery__item-bg {
-  background: linear-gradient(135deg, #B8C4CA 0%, #8FA3AD 40%, #6B8491 100%);
-}
-.gallery__item:nth-child(3) .gallery__item-bg {
-  background: linear-gradient(135deg, #D4C5B3 0%, #BBA98F 40%, #9C8B6F 100%);
-}
-.gallery__item:nth-child(4) .gallery__item-bg {
-  background: linear-gradient(135deg, #A3B5A8 0%, #7D9484 40%, #5A7562 100%);
-}
-.gallery__item:nth-child(5) .gallery__item-bg {
-  background: linear-gradient(135deg, #C1B3A3 0%, #A69683 40%, #8A7B67 100%);
-}
-.gallery__item:nth-child(6) .gallery__item-bg {
-  background: linear-gradient(135deg, #B5BDC8 0%, #8E99A7 40%, #6B7786 100%);
-}
-
-.gallery__item-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(43, 45, 59, 0.9) 0%, transparent 60%);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 1.5rem;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.gallery__item:hover .gallery__item-overlay {
-  opacity: 1;
-}
-
-.gallery__item-title {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--prisma-white);
-}
-
-.gallery__item-tag {
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.6);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-top: 0.25rem;
-}
-
-@media (max-width: 768px) {
-  .gallery__grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 180px);
-  }
-  .gallery__item:nth-child(1) {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-  .gallery__item:nth-child(4) {
-    grid-column: span 1;
-  }
-  .gallery__item-overlay { opacity: 1; }
-}
-
-/* ═══════════════════════════════════════════
-   CONTACT SECTION
-   ═══════════════════════════════════════════ */
-
-.contact__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(3rem, 6vw, 8rem);
-}
-
-.contact__info h2 {
-  margin-bottom: 1.5rem;
-}
-
-.contact__info > p {
-  margin-bottom: 2rem;
-}
-
-.contact__details {
-  list-style: none;
-  margin-bottom: 2rem;
-}
-
-.contact__details li {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-  font-size: 0.95rem;
-}
-
-.contact__details-icon {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  color: var(--prisma-red);
-}
-
-.contact__areas h4 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-  color: var(--prisma-medium-gray);
-}
-
-.contact__areas-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.contact__area-tag {
-  padding: 0.4rem 1rem;
-  background: var(--prisma-light-gray);
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--prisma-dark);
-}
-
-.contact__form-wrapper {
-  background: var(--prisma-white);
-  padding: clamp(2rem, 4vw, 3rem);
-  box-shadow: 0 20px 80px rgba(0,0,0,0.06);
-}
-
-.contact__form {
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
-
-.form-group {
-  position: relative;
+.test-card {
+  background: var(--prisma-cream);
+  border-radius: 14px;
+  padding: 2rem;
+  border: 1px solid var(--prisma-border);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-
-.form-group label {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.test-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(43,45,59,0.06);
+}
+.test-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 1rem;
+}
+.test-stars svg { width: 16px; height: 16px; color: var(--prisma-warm); fill: var(--prisma-warm); }
+.test-card blockquote {
+  font-size: 0.9rem;
   color: var(--prisma-dark);
-  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  font-style: italic;
 }
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 1rem;
-  border: 2px solid rgba(0,0,0,0.08);
-  background: var(--prisma-white);
-  font-family: var(--font-main);
-  font-size: 0.95rem;
-  color: var(--prisma-dark);
-  transition: border-color 0.3s;
-  outline: none;
+.test-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: var(--prisma-dark);
-}
-
-.form-group textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
-.contact__map {
-  margin-top: 2rem;
-  height: 200px;
-  background: var(--prisma-light-gray);
+.test-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--prisma-medium-gray);
   font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--prisma-white);
+}
+.test-author-info h5 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--prisma-navy);
+}
+.test-author-info span {
+  font-size: 0.75rem;
+  color: var(--prisma-gray);
 }
 
-@media (max-width: 900px) {
-  .contact__grid { grid-template-columns: 1fr; }
+/* ═══════════════════════════════════════════
+   SERVICE AREAS
+   ═══════════════════════════════════════════ */
+#areas { background: var(--prisma-cream); }
+.areas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+.area-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--prisma-white);
+  border: 1px solid var(--prisma-border);
+  padding: 0.65rem 1.25rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--prisma-dark);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.area-tag:hover {
+  background: var(--prisma-navy);
+  color: var(--prisma-white);
+  border-color: var(--prisma-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(43,45,59,0.15);
+}
+.area-tag svg { width: 14px; height: 14px; opacity: 0.5; }
+
+/* ═══════════════════════════════════════════
+   BEFORE/AFTER
+   ═══════════════════════════════════════════ */
+#beforeafter { background: var(--prisma-white); }
+.ba-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.ba-item {
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  height: 280px;
+  cursor: pointer;
+  border: 1px solid var(--prisma-border);
+}
+.ba-before, .ba-after {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: clip-path 0.5s var(--ease);
+}
+.ba-before {
+  background: linear-gradient(135deg, #B8AFA4 0%, #9E9589 40%, #8A8175 100%);
+  clip-path: inset(0 0 0 0);
+  z-index: 2;
+}
+.ba-after {
+  background: linear-gradient(135deg, #E8DDD0 0%, #D4C8B5 40%, #CBE4F2 100%);
+  z-index: 1;
+}
+/* Frost/fog effect for before */
+.ba-before::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(255,255,255,0.3) 0%, transparent 50%),
+    radial-gradient(circle at 70% 60%, rgba(255,255,255,0.25) 0%, transparent 40%);
+}
+/* Clear window effect for after */
+.ba-after::before {
+  content: '';
+  position: absolute;
+  inset: 15%;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 2px;
+  background: linear-gradient(180deg, rgba(135,206,250,0.2) 0%, rgba(176,224,255,0.15) 100%);
+}
+.ba-after::after {
+  content: '';
+  position: absolute;
+  top: 20%; left: 25%;
+  width: 30%; height: 20%;
+  background: rgba(255,255,255,0.3);
+  transform: rotate(-10deg);
+  filter: blur(8px);
+}
+.ba-item:hover .ba-before {
+  clip-path: inset(0 100% 0 0);
+}
+.ba-label {
+  position: absolute;
+  bottom: 12px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  z-index: 5;
+}
+.ba-label-before {
+  left: 12px;
+  background: rgba(43,45,59,0.7);
+  color: var(--prisma-white);
+}
+.ba-label-after {
+  right: 12px;
+  background: rgba(255,255,255,0.85);
+  color: var(--prisma-navy);
+}
+
+/* Window SVGs in before/after */
+.ba-window-old {
+  width: 60%; height: 70%;
+  position: relative;
+  z-index: 3;
+}
+.ba-window-old::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 3px solid rgba(120,110,95,0.6);
+  background:
+    linear-gradient(135deg, rgba(180,170,155,0.4) 0%, rgba(160,150,135,0.3) 50%, rgba(140,130,115,0.4) 100%);
+}
+.ba-window-new {
+  width: 60%; height: 70%;
+  position: relative;
+  z-index: 1;
+}
+.ba-window-new::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(255,255,255,0.6);
+  background:
+    linear-gradient(180deg, rgba(180,220,250,0.25) 0%, rgba(200,235,255,0.15) 100%);
+  box-shadow: inset 0 0 30px rgba(255,255,255,0.1);
+}
+
+.ba-desc {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 1rem;
+  text-align: center;
+  z-index: 10;
+}
+.ba-desc span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--prisma-gray);
+  letter-spacing: 0.05em;
+}
+
+/* ═══════════════════════════════════════════
+   CONTACT
+   ═══════════════════════════════════════════ */
+#contact { background: var(--prisma-cream); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.contact-info h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--prisma-navy);
+  margin-bottom: 1.5rem;
+}
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.contact-detail-icon {
+  width: 44px; height: 44px;
+  background: var(--prisma-white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--prisma-border);
+}
+.contact-detail-icon svg { width: 20px; height: 20px; color: var(--prisma-warm); }
+.contact-detail h5 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--prisma-navy);
+  margin-bottom: 0.2rem;
+}
+.contact-detail p, .contact-detail a {
+  font-size: 0.9rem;
+  color: var(--prisma-gray);
+}
+.contact-detail a:hover { color: var(--prisma-warm); }
+.contact-hours {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--prisma-white);
+  border-radius: 12px;
+  border: 1px solid var(--prisma-border);
+}
+.contact-hours h5 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--prisma-navy);
+  margin-bottom: 0.75rem;
+}
+.contact-hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.35rem 0;
+  font-size: 0.85rem;
+}
+.contact-hours-row span:first-child { color: var(--prisma-gray); }
+.contact-hours-row span:last-child { font-weight: 600; color: var(--prisma-dark); }
+
+/* Contact form (secondary) */
+.contact-form-wrap .quote-form {
+  max-width: 100%;
 }
 
 /* ═══════════════════════════════════════════
    FOOTER
    ═══════════════════════════════════════════ */
-
 .footer {
   background: var(--prisma-navy);
-  padding: 4rem 0 2rem;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.5);
+  padding: 4rem clamp(1.5rem, 4vw, 4rem) 2rem;
 }
-
-.footer__top {
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-top {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
   gap: 3rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
-
-.footer__brand .nav__logo-text {
-  color: var(--prisma-white);
-}
-
-.footer__brand p {
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.4);
+.footer-brand .nav-logo-text { color: var(--prisma-white); }
+.footer-brand p {
   margin-top: 1rem;
-  max-width: 300px;
-  line-height: 1.7;
-}
-
-.footer__col h4 {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.6);
-  margin-bottom: 1.5rem;
-}
-
-.footer__col ul {
-  list-style: none;
-}
-
-.footer__col li {
-  margin-bottom: 0.75rem;
-}
-
-.footer__col a {
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.4);
+  line-height: 1.7;
+  max-width: 280px;
+}
+.footer h6 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1.25rem;
+}
+.footer ul li {
+  margin-bottom: 0.6rem;
+}
+.footer ul li a {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
   transition: color 0.3s;
 }
-
-.footer__col a:hover {
-  color: var(--prisma-white);
+.footer ul li a:hover { color: var(--prisma-warm); }
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
 }
-
-.footer__bottom {
+.footer-social a {
+  width: 38px; height: 38px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+.footer-social a:hover { background: rgba(200,149,108,0.2); }
+.footer-social svg { width: 16px; height: 16px; color: rgba(255,255,255,0.6); }
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  .footer__top {
-    grid-template-columns: 1fr 1fr;
-  }
-  .footer__bottom {
-    flex-direction: column;
-    gap: 1rem;
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-content {
+    padding: calc(var(--nav-h) + 3rem) 2rem 2rem;
+    max-width: 100%;
     text-align: center;
   }
+  .hero-sub { margin: 0 auto 2rem; }
+  .hero-trust { justify-content: center; }
+  .hero-form-wrap {
+    padding: 0 2rem 3rem;
+  }
+  .quote-form { max-width: 520px; margin: 0 auto; }
+  .windows-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-features { grid-template-columns: repeat(2, 1fr); }
+  .counters { grid-template-columns: repeat(2, 1fr); }
+  .warranty-grid { grid-template-columns: 1fr; }
+  .process-timeline { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+  .process-timeline::before { display: none; }
+  .financing-options { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto 2.5rem; }
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .ba-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
 }
-
-@media (max-width: 500px) {
-  .footer__top { grid-template-columns: 1fr; }
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .hero h1 { font-size: 2.2rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .windows-grid { grid-template-columns: 1fr; }
+  .why-features { grid-template-columns: 1fr; }
+  .counters { grid-template-columns: repeat(2, 1fr); }
+  .process-timeline { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .ba-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
 }
 
 /* ═══════════════════════════════════════════
-   FORM SUCCESS STATE
+   SCROLL PROGRESS
    ═══════════════════════════════════════════ */
-
-.form-success {
-  display: none;
-  text-align: center;
-  padding: 3rem 2rem;
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--prisma-warm), var(--prisma-red));
+  z-index: 1001;
+  width: 0;
+  transition: width 0.1s linear;
 }
 
-.form-success.active {
-  display: block;
-}
-
-.form-success__icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 1.5rem;
-  color: var(--prisma-red);
-}
-
-.form-success h3 {
-  margin-bottom: 0.75rem;
-}
-
-.form-success p {
-  margin: 0 auto;
-}
-
-/* ═══════════════════════════════════════════
-   PATH TOGGLE (Contractor vs Retail)
-   ═══════════════════════════════════════════ */
-
-.paths {
-  margin-top: 3rem;
-}
-
-.paths__toggle {
-  display: flex;
-  border: 2px solid rgba(0,0,0,0.08);
-  width: fit-content;
-  margin-bottom: 2rem;
-}
-
-.paths__toggle-btn {
-  padding: 0.8rem 2rem;
-  font-family: var(--font-main);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  color: var(--prisma-medium-gray);
-  transition: all 0.3s;
-}
-
-.paths__toggle-btn.active {
-  background: var(--prisma-dark);
+/* Back to top */
+.back-top {
+  position: fixed;
+  bottom: 2rem; right: 2rem;
+  width: 44px; height: 44px;
+  background: var(--prisma-navy);
   color: var(--prisma-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 900;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s;
+  box-shadow: 0 4px 16px rgba(43,45,59,0.2);
 }
-
-.paths__content {
-  display: none;
+.back-top.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-
-.paths__content.active {
-  display: block;
-}
-
-.paths__content p {
-  font-size: 0.95rem;
-  line-height: 1.8;
-}
-
+.back-top:hover { background: var(--prisma-dark); }
+.back-top svg { width: 18px; height: 18px; }
 </style>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════
-     NAVIGATION
-     ═══════════════════════════════════════════ -->
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- Navigation -->
 <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-  <div class="nav__inner">
-    <a href="#hero" class="nav__logo" aria-label="Prisma Windows & Doors — Home">
-      <!-- Logo SVG: Maple Leaf + Prism Triangle -->
-      <svg class="nav__logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <!-- Prism triangle -->
-        <polygon points="21,4 38,38 4,38" fill="#3D4049" opacity="0.9"/>
-        <!-- Maple leaf simplified -->
-        <path d="M21 8 L23 14 L28 12 L25 17 L30 18 L25 21 L28 26 L23 24 L21 30 L19 24 L14 26 L17 21 L12 18 L17 17 L14 12 L19 14 Z" fill="#D32F2F" opacity="0.9"/>
-      </svg>
-      <span class="nav__logo-text brand-name">Prisma</span>
-    </a>
-
-    <ul class="nav__links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#calculator">Estimate</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact" class="nav__cta">Get Estimate</a></li>
-    </ul>
-
-    <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+  <a href="#hero" class="nav-logo" aria-label="Prisma Windows and Doors — Home">
+    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <polygon points="18,2 32,30 4,30" fill="#3D4049"/>
+      <path d="M18 8C18 8 14 14 14 18C14 20.5 15.8 22 18 22C20.2 22 22 20.5 22 18C22 14 18 8 18 8Z" fill="#D32F2F"/>
+    </svg>
+    <span class="nav-logo-text">Prisma</span>
+  </a>
+  <div class="nav-links">
+    <a href="#windows">Products</a>
+    <a href="#why">Why Us</a>
+    <a href="#warranty">Warranty</a>
+    <a href="#financing">Financing</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="#hero" class="nav-cta">Get a Quote</a>
   </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-<!-- Mobile overlay -->
-<div class="nav__mobile-overlay" id="mobileOverlay">
-  <ul class="nav__mobile-links">
-    <li><a href="#about" class="mobile-link">About</a></li>
-    <li><a href="#services" class="mobile-link">Services</a></li>
-    <li><a href="#process" class="mobile-link">Process</a></li>
-    <li><a href="#calculator" class="mobile-link">Estimate</a></li>
-    <li><a href="#gallery" class="mobile-link">Gallery</a></li>
-    <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
-    <li><a href="#contact" class="mobile-link">Contact</a></li>
-  </ul>
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <a href="#windows" class="mobile-link">Products</a>
+  <a href="#why" class="mobile-link">Why Us</a>
+  <a href="#warranty" class="mobile-link">Warranty</a>
+  <a href="#financing" class="mobile-link">Financing</a>
+  <a href="#testimonials" class="mobile-link">Reviews</a>
+  <a href="#areas" class="mobile-link">Service Areas</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="#hero" class="mobile-link" style="color:var(--prisma-warm);font-weight:700;">Get a Quote</a>
 </div>
 
 <!-- ═══════════════════════════════════════════
      HERO
      ═══════════════════════════════════════════ -->
 <section class="hero" id="hero" aria-label="Hero">
-  <div class="hero__light"></div>
-  <div class="hero__window-frame" aria-hidden="true"></div>
-  <div class="hero__rays" aria-hidden="true"></div>
-
-  <div class="hero__content">
-    <div class="hero__label">Ottawa, Ontario</div>
-    <h1 class="hero__title">
-      Precision Installation.<br>Canadian Craftsmanship.
-      <span>Windows & doors that define your home</span>
+  <div class="hero-content">
+    <div class="hero-badge reveal">
+      <svg viewBox="0 0 14 14" fill="none"><path d="M7 1C7 1 5.5 4 5.5 6C5.5 7.4 6.2 8 7 8C7.8 8 8.5 7.4 8.5 6C8.5 4 7 1 7 1Z" fill="#D32F2F"/></svg>
+      Proudly Canadian · Serving Ottawa Since 2009
+    </div>
+    <h1 class="reveal" data-delay="1">
+      Ottawa's Trusted<br>
+      Window & Door<br>
+      <span class="accent">Experts</span>
     </h1>
-    <p class="hero__subtitle">
-      Expert window and door installation across Ottawa — from consultation to warranty. Your home deserves precision.
+    <p class="hero-sub reveal" data-delay="2">
+      Precision installation backed by warranty you can count on. Energy Star certified products, flexible financing, and craftsmanship that stands the test of Canadian winters.
     </p>
-    <div class="hero__actions">
-      <a href="#calculator" class="btn btn--primary">Get Free Estimate</a>
-      <a href="#services" class="btn btn--white-outline">Our Services</a>
+    <div class="hero-trust reveal" data-delay="3">
+      <div class="hero-trust-item">
+        <svg viewBox="0 0 18 18" fill="none"><path d="M9 1L11.5 6L17 6.8L13 10.7L14 16.2L9 13.5L4 16.2L5 10.7L1 6.8L6.5 6L9 1Z" fill="currentColor"/></svg>
+        Energy Star Certified
+      </div>
+      <div class="hero-trust-item">
+        <svg viewBox="0 0 18 18" fill="none"><path d="M16 5L7 14L2 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Licensed & Insured
+      </div>
+      <div class="hero-trust-item">
+        <svg viewBox="0 0 18 18" fill="none"><path d="M9 1V17M1 9H17M3 3L15 15M15 3L3 15" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        5-Year Warranty
+      </div>
     </div>
   </div>
 
-  <div class="hero__scroll-hint" aria-hidden="true">
-    <span>Scroll</span>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-      <path d="M12 5v14M5 12l7 7 7-7"/>
-    </svg>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════
-     ABOUT
-     ═══════════════════════════════════════════ -->
-<section class="section" id="about" aria-label="About Prisma">
-  <div class="container">
-    <div class="about__grid">
-      <div class="about__text reveal-left">
-        <span class="section-label">About Prisma</span>
-        <h2>Your home deserves<br>precision.</h2>
-        <p>
-          Prisma Windows and Doors Inc. was founded on a simple principle: every installation should be flawless. Based in Ottawa, we bring Canadian craftsmanship to every project — whether you're a homeowner replacing aging windows or a contractor needing reliable installation crews.
-        </p>
-        <p>
-          Our name reflects our approach. Like light through a prism, we transform raw materials into something beautiful, precise, and lasting. The maple leaf in our logo isn't decoration — it's a promise of quality rooted in Canadian standards.
-        </p>
-
-        <div class="paths">
-          <div class="paths__toggle">
-            <button class="paths__toggle-btn active" data-path="retail" aria-pressed="true">Homeowner</button>
-            <button class="paths__toggle-btn" data-path="contractor" aria-pressed="false">Contractor</button>
-          </div>
-          <div class="paths__content active" id="path-retail">
-            <p>Full-service experience: we supply premium windows and doors, handle demolition, installation, trim work, sills, and capping. One team, one warranty, zero headaches.</p>
-          </div>
-          <div class="paths__content" id="path-contractor">
-            <p>Installation-only service for contractors. You supply the units — we install with precision. Reliable scheduling, clean crews, professional results your clients will love.</p>
-          </div>
+  <div class="hero-form-wrap">
+    <form class="quote-form reveal-right" id="quoteForm" aria-label="Request a free quote" novalidate>
+      <div class="form-header">
+        <h3>Get Your Free Quote</h3>
+        <p>Response within 24 hours — no obligation</p>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="heroName">Name</label>
+          <input type="text" id="heroName" name="name" placeholder="Your name" required aria-required="true">
+          <div class="form-error">Please enter your name</div>
+        </div>
+        <div class="form-group">
+          <label for="heroPhone">Phone</label>
+          <input type="tel" id="heroPhone" name="phone" placeholder="(613) 000-0000" required aria-required="true">
+          <div class="form-error">Please enter a valid phone number</div>
         </div>
       </div>
-
-      <div class="about__visual reveal-right">
-        <div class="about__visual-box about__visual-box--main">
-          <!-- Maple leaf watermark -->
-          <svg class="about__maple-leaf" viewBox="0 0 100 100" fill="var(--prisma-red)" aria-hidden="true">
-            <path d="M50 5 L55 25 L70 18 L60 35 L78 38 L60 48 L70 65 L55 55 L50 78 L45 55 L30 65 L40 48 L22 38 L40 35 L30 18 L45 25 Z"/>
-          </svg>
-        </div>
-        <div class="about__visual-box about__visual-box--accent">
-          <p>Serving Ottawa since day one. Kanata to Orleans, Barrhaven to Gatineau — we know every neighbourhood.</p>
-        </div>
+      <div class="form-group">
+        <label for="heroEmail">Email</label>
+        <input type="email" id="heroEmail" name="email" placeholder="you@email.com" required aria-required="true">
+        <div class="form-error">Please enter a valid email</div>
       </div>
-    </div>
-
-    <div class="about__values reveal" style="--i: 2">
-      <div class="about__value">
-        <div class="about__value-number">500+</div>
-        <div class="about__value-label">Projects Completed</div>
+      <div class="form-group">
+        <label for="heroProject">Project Type</label>
+        <select id="heroProject" name="project" required aria-required="true">
+          <option value="" disabled selected>Select your project</option>
+          <option value="windows-replace">Window Replacement</option>
+          <option value="windows-new">New Window Installation</option>
+          <option value="doors-entry">Entry Door</option>
+          <option value="doors-patio">Patio Door</option>
+          <option value="windows-doors">Windows & Doors</option>
+          <option value="other">Other</option>
+        </select>
+        <div class="form-error">Please select a project type</div>
       </div>
-      <div class="about__value">
-        <div class="about__value-number">100%</div>
-        <div class="about__value-label">Licensed & Insured</div>
+      <div class="form-group">
+        <label for="heroMessage">Message <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></label>
+        <textarea id="heroMessage" name="message" placeholder="Tell us about your project..."></textarea>
       </div>
-      <div class="about__value">
-        <div class="about__value-number">5yr</div>
-        <div class="about__value-label">Workmanship Warranty</div>
-      </div>
-    </div>
+      <button type="submit" class="form-submit">Request Free Quote</button>
+      <p class="form-note">🔒 Your information is secure and never shared</p>
+    </form>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════
-     SERVICES
+     WINDOW TYPES
      ═══════════════════════════════════════════ -->
-<section class="section section--gray" id="services" aria-label="Our Services">
-  <div class="container">
-    <div class="services__intro reveal">
-      <span class="section-label">Services</span>
-      <h2>Everything your<br>home needs.</h2>
-      <p>From single window replacements to full-home renovations, we handle every step with care.</p>
+<section class="section" id="windows" aria-label="Window types">
+  <div class="section-inner">
+    <div class="section-header center reveal">
+      <span class="section-label">Our Products</span>
+      <h2 class="section-title">Windows & Doors for Every Home</h2>
+      <p class="section-sub">Premium Energy Star certified products designed to withstand Ottawa's harshest winters while keeping your home beautiful and comfortable year-round.</p>
     </div>
-
-    <div class="services__grid stagger">
-      <!-- Windows -->
-      <div class="service-card reveal" style="--i: 0">
-        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <rect x="6" y="6" width="36" height="36" rx="1"/>
-          <line x1="24" y1="6" x2="24" y2="42"/>
-          <line x1="6" y1="24" x2="42" y2="24"/>
-          <line x1="6" y1="6" x2="24" y2="24" opacity="0.3"/>
-        </svg>
-        <h3>Window Installation</h3>
-        <p>Premium installation for every window type — energy efficient, beautifully finished.</p>
-        <ul class="service-card__list">
-          <li>Casement & Awning</li>
-          <li>Single & Double Hung</li>
-          <li>Bay & Bow</li>
-          <li>Sliding & Picture</li>
-          <li>Custom Shapes</li>
-        </ul>
+    <div class="windows-grid">
+      <div class="window-card reveal-scale" data-delay="1">
+        <div class="window-card-img wimg-casement"><div class="window-pane"></div></div>
+        <span class="window-card-tag">Energy Star</span>
+        <div class="window-card-body">
+          <h3>Casement Windows</h3>
+          <p>Modern crank-out design for maximum ventilation and unobstructed views. Superior energy efficiency with multi-point locking.</p>
+        </div>
       </div>
-
-      <!-- Doors -->
-      <div class="service-card reveal" style="--i: 1">
-        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <rect x="10" y="4" width="28" height="40" rx="1"/>
-          <circle cx="32" cy="26" r="2"/>
-          <rect x="16" y="8" width="16" height="12" rx="0.5" opacity="0.4"/>
-        </svg>
-        <h3>Door Installation</h3>
-        <p>Entry doors that make a statement. Patio doors that invite the outdoors in.</p>
-        <ul class="service-card__list">
-          <li>Entry & Front Doors</li>
-          <li>Patio & Sliding</li>
-          <li>French Doors</li>
-          <li>Storm & Garage</li>
-          <li>Custom Designs</li>
-        </ul>
+      <div class="window-card reveal-scale" data-delay="2">
+        <div class="window-card-img wimg-doublehung"><div class="window-pane"></div></div>
+        <span class="window-card-tag">Classic</span>
+        <div class="window-card-body">
+          <h3>Double-Hung Windows</h3>
+          <p>Timeless design with tilt-in sashes for easy cleaning. Perfect balance of style, function, and low maintenance.</p>
+        </div>
       </div>
-
-      <!-- Demolition -->
-      <div class="service-card reveal" style="--i: 2">
-        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M8 40 L24 8 L40 40"/>
-          <line x1="14" y1="28" x2="34" y2="28" opacity="0.4"/>
-          <line x1="20" y1="16" x2="28" y2="16" opacity="0.3"/>
-        </svg>
-        <h3>Demolition & Removal</h3>
-        <p>Safe, clean removal of old windows and doors. We handle disposal and prep the opening for perfect new installation.</p>
-        <ul class="service-card__list">
-          <li>Old unit removal</li>
-          <li>Frame preparation</li>
-          <li>Debris cleanup</li>
-          <li>Responsible disposal</li>
-        </ul>
+      <div class="window-card reveal-scale" data-delay="3">
+        <div class="window-card-img wimg-bay">
+          <div class="window-pane"></div>
+          <div class="window-pane-center"></div>
+        </div>
+        <span class="window-card-tag">Premium</span>
+        <div class="window-card-body">
+          <h3>Bay & Bow Windows</h3>
+          <p>Create panoramic views and add usable interior space. A stunning focal point that transforms any room.</p>
+        </div>
       </div>
+      <div class="window-card reveal-scale" data-delay="4">
+        <div class="window-card-img wimg-sliding"></div>
+        <span class="window-card-tag">Space-Saving</span>
+        <div class="window-card-body">
+          <h3>Sliding Windows</h3>
+          <p>Smooth horizontal glide with contemporary aesthetics. Ideal for areas where outward-opening windows aren't practical.</p>
+        </div>
+      </div>
+      <div class="window-card reveal-scale" data-delay="5">
+        <div class="window-card-img wimg-awning"><div class="window-pane"></div></div>
+        <span class="window-card-tag">All-Weather</span>
+        <div class="window-card-body">
+          <h3>Awning Windows</h3>
+          <p>Hinged at top for ventilation even during rain. Pairs beautifully with fixed windows for flexible design combinations.</p>
+        </div>
+      </div>
+      <div class="window-card reveal-scale" data-delay="6">
+        <div class="window-card-img wimg-doors">
+          <div class="window-pane"></div>
+          <div class="door-handle"></div>
+        </div>
+        <span class="window-card-tag">Security</span>
+        <div class="window-card-body">
+          <h3>Entry & Patio Doors</h3>
+          <p>Make a lasting first impression with premium entry doors. Multi-point locks, insulated cores, and elegant glass options.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Trim & Finishing -->
-      <div class="service-card reveal" style="--i: 3">
-        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <rect x="8" y="8" width="32" height="32" rx="1"/>
-          <rect x="12" y="12" width="24" height="24" rx="0.5" opacity="0.4"/>
-          <rect x="16" y="16" width="16" height="16" rx="0.5" opacity="0.2"/>
-        </svg>
-        <h3>Trim & Finishing</h3>
-        <p>The details that make the difference. Interior and exterior trim, sills, and aluminum capping for a polished result.</p>
-        <ul class="service-card__list">
-          <li>Interior trim & casing</li>
-          <li>Exterior capping</li>
-          <li>Sill installation</li>
-          <li>Caulking & sealing</li>
-        </ul>
+<!-- ═══════════════════════════════════════════
+     WHY PRISMA
+     ═══════════════════════════════════════════ -->
+<section class="section" id="why" aria-label="Why choose Prisma">
+  <div class="section-inner">
+    <div class="section-header center reveal">
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="section-title">Built on Trust, Backed by Experience</h2>
+      <p class="section-sub">We're not just installers — we're your neighbors. Ottawa born, Ottawa proud, with over 15 years of making homes warmer and more beautiful.</p>
+    </div>
+    <div class="why-features">
+      <div class="why-feature reveal" data-delay="1">
+        <div class="why-feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4>Licensed & Insured</h4>
+        <p>Fully licensed Ontario contractor with comprehensive liability insurance for your peace of mind.</p>
+      </div>
+      <div class="why-feature reveal" data-delay="2">
+        <div class="why-feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        </div>
+        <h4>Energy Star Products</h4>
+        <p>All our windows and doors meet or exceed Energy Star requirements, saving you money on heating bills.</p>
+      </div>
+      <div class="why-feature reveal" data-delay="3">
+        <div class="why-feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        </div>
+        <h4>Flexible Financing</h4>
+        <p>Don't let budget hold you back. 0% financing options and flexible payment plans through Financeit.</p>
+      </div>
+      <div class="why-feature reveal" data-delay="4">
+        <div class="why-feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3C12 3 9 8 9 12C9 14.8 10.3 16 12 16C13.7 16 15 14.8 15 12C15 8 12 3 12 3Z"/><path d="M5 21h14"/></svg>
+        </div>
+        <h4>Ottawa Born</h4>
+        <p>Local company, local team, local commitment. We know Ottawa homes because we live here too.</p>
+      </div>
+    </div>
+    <div class="counters reveal">
+      <div class="counter-item">
+        <div class="counter-num"><span class="counter" data-target="500">0</span><span class="counter-suffix">+</span></div>
+        <div class="counter-label">Projects Completed</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num"><span class="counter" data-target="15">0</span><span class="counter-suffix">+</span></div>
+        <div class="counter-label">Years Experience</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num"><span class="counter" data-target="100">0</span><span class="counter-suffix">%</span></div>
+        <div class="counter-label">Licensed & Certified</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num"><span class="counter" data-target="5">0</span><span class="counter-suffix">-Year</span></div>
+        <div class="counter-label">Installation Warranty</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     WARRANTY
+     ═══════════════════════════════════════════ -->
+<section class="section" id="warranty" aria-label="Warranty information">
+  <div class="section-inner">
+    <div class="section-header center reveal">
+      <span class="section-label">Your Protection</span>
+      <h2 class="section-title">Your Investment Is Protected</h2>
+      <p class="section-sub">Every Prisma installation comes with comprehensive warranty coverage. We stand behind our work — and so do our manufacturers.</p>
+    </div>
+    <div class="warranty-grid">
+      <div class="warranty-card reveal" data-delay="1">
+        <div class="warranty-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h4>5-Year Installation Warranty</h4>
+        <p>Our workmanship is guaranteed for a full five years. If anything related to our installation needs attention, we'll make it right — no questions asked.</p>
+      </div>
+      <div class="warranty-card reveal" data-delay="2">
+        <div class="warranty-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+        </div>
+        <h4>Manufacturer Product Warranty</h4>
+        <p>Lifetime warranty on vinyl windows. Our manufacturer partners stand behind every component — glass, hardware, and frame — for decades of worry-free performance.</p>
+      </div>
+      <div class="warranty-card reveal" data-delay="3">
+        <div class="warranty-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 00-6 0v4"/><rect x="4" y="9" width="16" height="12" rx="2"/><circle cx="12" cy="15" r="1"/></svg>
+        </div>
+        <h4>Satisfaction Guarantee</h4>
+        <p>We don't consider the job done until you're completely satisfied. Our team will walk through every detail with you during the final inspection.</p>
       </div>
     </div>
   </div>
@@ -1857,199 +1743,203 @@ p {
 <!-- ═══════════════════════════════════════════
      PROCESS
      ═══════════════════════════════════════════ -->
-<section class="section section--dark" id="process" aria-label="Our Process">
-  <div class="container">
-    <div class="process__header reveal">
-      <span class="section-label">How We Work</span>
-      <h2>Four steps to<br>perfect installation.</h2>
-      <p>A proven process refined over hundreds of projects. No surprises, no shortcuts.</p>
+<section class="section" id="process" aria-label="Our process">
+  <div class="section-inner">
+    <div class="section-header center reveal">
+      <span class="section-label">How It Works</span>
+      <h2 class="section-title">From Consultation to Completion</h2>
+      <p class="section-sub">A streamlined process designed around your schedule. No pressure, no surprises — just professional service from start to finish.</p>
     </div>
-
-    <div class="process__timeline stagger">
-      <div class="process__step reveal" style="--i: 0">
-        <div class="process__step-number">01</div>
-        <svg class="process__step-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-          <circle cx="16" cy="16" r="12"/>
-          <path d="M12 16 L16 20 L22 12"/>
-        </svg>
-        <h3>Consultation</h3>
-        <p>Free in-home or virtual consultation. We assess your needs, discuss options, and provide a transparent quote.</p>
+    <div class="process-timeline">
+      <div class="process-step reveal" data-delay="1">
+        <div class="process-step-num">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="16" cy="16" r="10"/><path d="M16 11v5l3 3"/></svg>
+        </div>
+        <div class="step-number">Step 01</div>
+        <h4>Free Consultation</h4>
+        <p>We visit your home, assess your needs, and provide a detailed, no-obligation quote within 48 hours.</p>
       </div>
-
-      <div class="process__step reveal" style="--i: 1">
-        <div class="process__step-number">02</div>
-        <svg class="process__step-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-          <rect x="4" y="4" width="24" height="24" rx="1"/>
-          <line x1="4" y1="16" x2="28" y2="16" opacity="0.5"/>
-          <line x1="16" y1="4" x2="16" y2="28" opacity="0.5"/>
-        </svg>
-        <h3>Measurement</h3>
-        <p>Precision measurements by our trained technicians. Every millimetre matters for a perfect fit.</p>
+      <div class="process-step reveal" data-delay="2">
+        <div class="process-step-num">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h20v20H6z"/><path d="M6 16h20M16 6v20"/></svg>
+        </div>
+        <div class="step-number">Step 02</div>
+        <h4>Precise Measurement</h4>
+        <p>Our technicians take laser-precise measurements ensuring perfect fit for every window and door opening.</p>
       </div>
-
-      <div class="process__step reveal" style="--i: 2">
-        <div class="process__step-number">03</div>
-        <svg class="process__step-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-          <path d="M6 28 L16 6 L26 28"/>
-          <line x1="10" y1="20" x2="22" y2="20"/>
-        </svg>
-        <h3>Installation</h3>
-        <p>Professional installation by certified crews. Clean, efficient, and respectful of your home and time.</p>
+      <div class="process-step reveal" data-delay="3">
+        <div class="process-step-num">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 6L8 26M24 6L18 26M6 12h22M4 20h22"/></svg>
+        </div>
+        <div class="step-number">Step 03</div>
+        <h4>Expert Installation</h4>
+        <p>Factory-trained installers complete the work efficiently and cleanly. Most projects finished in a single day.</p>
       </div>
-
-      <div class="process__step reveal" style="--i: 3">
-        <div class="process__step-number">04</div>
-        <svg class="process__step-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-          <path d="M16 4 L20 12 L28 12 L22 18 L24 26 L16 22 L8 26 L10 18 L4 12 L12 12 Z"/>
-        </svg>
-        <h3>Warranty</h3>
-        <p>5-year workmanship warranty. Plus full manufacturer warranties on all products. We stand behind every project.</p>
+      <div class="process-step reveal" data-delay="4">
+        <div class="process-step-num">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-8 0v2"/><circle cx="16" cy="10" r="4"/><path d="M4 26c0-4 5.3-7 12-7s12 3 12 7"/></svg>
+        </div>
+        <div class="step-number">Step 04</div>
+        <h4>Ongoing Support</h4>
+        <p>Our relationship doesn't end at installation. Warranty service, maintenance tips, and a team that's always a call away.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════
-     ESTIMATE CALCULATOR
+     FINANCING
      ═══════════════════════════════════════════ -->
-<section class="section calculator" id="calculator" aria-label="Estimate Calculator">
-  <div class="container">
-    <div class="calculator__grid">
-      <div class="calculator__intro reveal-left">
-        <span class="section-label">Estimate Calculator</span>
-        <h2>Get a ballpark<br>in 30 seconds.</h2>
-        <p>
-          No other window company in Ottawa offers this. Select your project details and get an instant price range — no phone tag, no pressure.
-        </p>
-        <p>
-          This is an approximate estimate to help you plan. For a precise quote, book a free consultation with our team.
-        </p>
-        <div class="calculator__disclaimer">
-          * Prices are approximate and include installation labour. Final pricing depends on specific products, accessibility, and site conditions. HST (13%) not included.
+<section class="section" id="financing" aria-label="Financing options">
+  <div class="section-inner">
+    <div class="section-header center reveal">
+      <span class="section-label">Flexible Payment</span>
+      <h2 class="section-title">Make Your Dream Home Affordable</h2>
+      <p class="section-sub">Don't wait another winter with drafty windows. Our financing options make it easy to upgrade your home today.</p>
+    </div>
+    <div class="financing-options">
+      <div class="fin-card reveal" data-delay="1">
+        <div class="fin-card-icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="14" cy="14" r="11"/><path d="M14 8v12M10 12h8"/></svg>
         </div>
+        <h4>No Payments for 3 Months</h4>
+        <p>Get your windows installed now and start paying in three months. Perfect for planning around your budget.</p>
       </div>
-
-      <div class="calculator__form reveal-right" role="form" aria-label="Estimate calculator">
-        <!-- Type Selection -->
-        <div class="calc-field">
-          <span class="calc-field__label">What do you need?</span>
-          <div class="calc-field__options" role="radiogroup" aria-label="Installation type">
-            <button class="calc-option active" data-type="window" role="radio" aria-checked="true">
-              <span class="calc-option__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="3" y="3" width="18" height="18" rx="0.5"/>
-                  <line x1="12" y1="3" x2="12" y2="21"/>
-                  <line x1="3" y1="12" x2="21" y2="12"/>
-                </svg>
-              </span>
-              Window
-            </button>
-            <button class="calc-option" data-type="door" role="radio" aria-checked="false">
-              <span class="calc-option__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="5" y="2" width="14" height="20" rx="0.5"/>
-                  <circle cx="16" cy="13" r="1"/>
-                </svg>
-              </span>
-              Door
-            </button>
-          </div>
+      <div class="fin-card reveal" data-delay="2">
+        <div class="fin-card-icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="22" height="16" rx="2"/><path d="M3 12h22"/><path d="M7 17h6"/></svg>
         </div>
-
-        <!-- Size Selection -->
-        <div class="calc-field">
-          <span class="calc-field__label">Size</span>
-          <div class="calc-field__options" role="radiogroup" aria-label="Size">
-            <button class="calc-option" data-size="small" role="radio" aria-checked="false">Small</button>
-            <button class="calc-option active" data-size="medium" role="radio" aria-checked="true">Medium</button>
-            <button class="calc-option" data-size="large" role="radio" aria-checked="false">Large</button>
-          </div>
+        <h4>0% Interest — 24 Months</h4>
+        <p>Split your project into 24 equal payments with zero interest. The most popular option for Ottawa homeowners.</p>
+      </div>
+      <div class="fin-card reveal" data-delay="3">
+        <div class="fin-card-icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 3v22M3 14h22"/><circle cx="14" cy="14" r="5"/></svg>
         </div>
-
-        <!-- Quantity -->
-        <div class="calc-field">
-          <span class="calc-field__label">Quantity</span>
-          <div class="calc-quantity">
-            <button class="calc-quantity__btn" id="calcMinus" aria-label="Decrease quantity">−</button>
-            <span class="calc-quantity__value" id="calcQty" aria-live="polite">1</span>
-            <button class="calc-quantity__btn" id="calcPlus" aria-label="Increase quantity">+</button>
-          </div>
-        </div>
-
-        <!-- Result -->
-        <div class="calc-result visible" id="calcResult" aria-live="polite">
-          <div class="calc-result__label">Estimated Range</div>
-          <div class="calc-result__price" id="calcPrice">$400 – $700</div>
-          <div class="calc-result__note">Installation included · HST extra</div>
-          <div class="calc-result__cta">
-            <a href="#contact" class="btn btn--primary" style="font-size:0.75rem; padding:0.8rem 2rem;">Get Exact Quote</a>
-          </div>
-        </div>
+        <h4>Low Monthly Payments</h4>
+        <p>Extended terms with low monthly payments that fit comfortably into any household budget. Up to 60 months.</p>
       </div>
     </div>
+    <div class="fin-cta reveal">
+      <a href="#contact" class="btn-primary">
+        Get Pre-Approved in Minutes
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
+    <p class="fin-partner reveal">Financing provided through Financeit — Canada's trusted home improvement lender</p>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════
      TESTIMONIALS
      ═══════════════════════════════════════════ -->
-<section class="section" id="testimonials" aria-label="Testimonials">
-  <div class="container">
-    <div class="testimonials__header reveal">
-      <span class="section-label">Testimonials</span>
-      <h2>What Ottawa<br>homeowners say.</h2>
-      <p>Real feedback from real projects across the capital region.</p>
+<section class="section" id="testimonials" aria-label="Customer testimonials">
+  <div class="section-inner">
+    <div class="section-header center reveal">
+      <span class="section-label">Customer Stories</span>
+      <h2 class="section-title">What Ottawa Homeowners Say</h2>
+      <p class="section-sub">Real reviews from families across the National Capital Region who trust Prisma with their homes.</p>
     </div>
-
-    <div class="testimonials__grid stagger">
-      <div class="testimonial-card reveal" style="--i: 0">
-        <div class="testimonial-card__quote">"</div>
-        <p>We had 12 windows replaced in our Kanata home and couldn't be happier. The crew was professional, clean, and finished a day ahead of schedule. The difference in energy efficiency is already noticeable.</p>
-        <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar">MR</div>
-          <div>
-            <div class="testimonial-card__name">Michael R.</div>
-            <div class="testimonial-card__location">Kanata, ON</div>
-            <div class="testimonial-card__stars">★★★★★</div>
+    <div class="testimonials-grid">
+      <div class="test-card reveal" data-delay="1">
+        <div class="test-stars">
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+        </div>
+        <blockquote>"Replaced 12 windows in our Kanata home before winter. The difference in our heating bill was noticeable immediately — down almost 30%. The crew was professional, clean, and finished in just two days."</blockquote>
+        <div class="test-author">
+          <div class="test-avatar" style="background:linear-gradient(135deg,#C8956C,#A67B5B)">MK</div>
+          <div class="test-author-info">
+            <h5>Michael & Karen T.</h5>
+            <span>Kanata, ON</span>
           </div>
         </div>
       </div>
-
-      <div class="testimonial-card reveal" style="--i: 1">
-        <div class="testimonial-card__quote">"</div>
-        <p>As a contractor, I need crews I can rely on. Prisma has installed over 50 units for my projects — always on time, always perfect. My clients consistently compliment the finishing work.</p>
-        <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar">SL</div>
-          <div>
-            <div class="testimonial-card__name">Sarah L.</div>
-            <div class="testimonial-card__location">Orleans, ON</div>
-            <div class="testimonial-card__stars">★★★★★</div>
+      <div class="test-card reveal" data-delay="2">
+        <div class="test-stars">
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+        </div>
+        <blockquote>"Excellent service du début à la fin! They installed a beautiful patio door and three casement windows in our Orléans home. The team was respectful, bilingual, and incredibly detail-oriented."</blockquote>
+        <div class="test-author">
+          <div class="test-avatar" style="background:linear-gradient(135deg,#5B8FA6,#3D6F85)">SL</div>
+          <div class="test-author-info">
+            <h5>Sophie Leclair</h5>
+            <span>Orléans, ON</span>
           </div>
         </div>
       </div>
-
-      <div class="testimonial-card reveal" style="--i: 2">
-        <div class="testimonial-card__quote">"</div>
-        <p>The bay window they installed transformed our living room. The estimate calculator on their website was surprisingly accurate — no nasty surprises when the final bill came. Very transparent company.</p>
-        <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar">DK</div>
-          <div>
-            <div class="testimonial-card__name">David K.</div>
-            <div class="testimonial-card__location">Barrhaven, ON</div>
-            <div class="testimonial-card__stars">★★★★★</div>
+      <div class="test-card reveal" data-delay="3">
+        <div class="test-stars">
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+        </div>
+        <blockquote>"Had a bay window installed in our new-build in Barrhaven. Prisma worked seamlessly with our general contractor. The bay window is now the centerpiece of our living room — everyone comments on it."</blockquote>
+        <div class="test-author">
+          <div class="test-avatar" style="background:linear-gradient(135deg,#6BA085,#4A7D63)">RP</div>
+          <div class="test-author-info">
+            <h5>Raj & Priya Patel</h5>
+            <span>Barrhaven, ON</span>
           </div>
         </div>
       </div>
-
-      <div class="testimonial-card reveal" style="--i: 3">
-        <div class="testimonial-card__quote">"</div>
-        <p>Our 1960s bungalow in Nepean needed every window replaced. Prisma handled the demolition, disposal, installation, and all the trim work. The house feels like new and our heating bill dropped significantly.</p>
-        <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar">JT</div>
-          <div>
-            <div class="testimonial-card__name">Jennifer T.</div>
-            <div class="testimonial-card__location">Nepean, ON</div>
-            <div class="testimonial-card__stars">★★★★★</div>
+      <div class="test-card reveal" data-delay="4">
+        <div class="test-stars">
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+        </div>
+        <blockquote>"Living in a 1970s condo in Nepean, I was worried about the complexity. Prisma handled everything — removed the old aluminum frames, installed triple-pane vinyl, and even cleaned up perfectly. Night and day difference."</blockquote>
+        <div class="test-author">
+          <div class="test-avatar" style="background:linear-gradient(135deg,#9B7BB8,#7A5A99)">DW</div>
+          <div class="test-author-info">
+            <h5>Diane Whitmore</h5>
+            <span>Nepean, ON</span>
+          </div>
+        </div>
+      </div>
+      <div class="test-card reveal" data-delay="5">
+        <div class="test-stars">
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+        </div>
+        <blockquote>"We got 8 windows replaced in our Bridlewood home. From the first quote to the final walkthrough, everything was transparent. No hidden fees, fair pricing, and the Financeit option made it easy on our budget."</blockquote>
+        <div class="test-author">
+          <div class="test-avatar" style="background:linear-gradient(135deg,#C8956C,#A67B5B)">JA</div>
+          <div class="test-author-info">
+            <h5>James & Amanda R.</h5>
+            <span>Kanata, ON</span>
+          </div>
+        </div>
+      </div>
+      <div class="test-card reveal" data-delay="6">
+        <div class="test-stars">
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+          <svg viewBox="0 0 16 16"><path d="M8 1l2.2 4.4 4.8.7-3.5 3.4.8 4.8L8 11.8l-4.3 2.5.8-4.8L1 6.1l4.8-.7z"/></svg>
+        </div>
+        <blockquote>"Service impeccable! Nous avons fait remplacer notre porte d'entrée et 5 fenêtres. L'équipe parlait français, ce qui était très apprécié. Qualité exceptionnelle et installation rapide. Merci Prisma!"</blockquote>
+        <div class="test-author">
+          <div class="test-avatar" style="background:linear-gradient(135deg,#5B7FA6,#3D5F85)">MB</div>
+          <div class="test-author-info">
+            <h5>Marc Beauchamp</h5>
+            <span>Gatineau, QC</span>
           </div>
         </div>
       </div>
@@ -2058,62 +1948,72 @@ p {
 </section>
 
 <!-- ═══════════════════════════════════════════
-     GALLERY
+     SERVICE AREAS
      ═══════════════════════════════════════════ -->
-<section class="section section--gray" id="gallery" aria-label="Project Gallery">
-  <div class="container">
-    <div class="gallery__header reveal">
-      <span class="section-label">Our Work</span>
-      <h2>Projects across<br>Ottawa.</h2>
-      <p>A selection of recent installations throughout the capital region.</p>
+<section class="section" id="areas" aria-label="Service areas">
+  <div class="section-inner">
+    <div class="section-header center reveal">
+      <span class="section-label">Coverage</span>
+      <h2 class="section-title">Serving the Greater Ottawa-Gatineau Region</h2>
+      <p class="section-sub">From urban condos to suburban homes, we bring premium window and door solutions to every corner of the National Capital Region.</p>
     </div>
+    <div class="areas-grid reveal">
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Ottawa</a>
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Nepean</a>
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Kanata</a>
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Orléans</a>
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Barrhaven</a>
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Gloucester</a>
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Stittsville</a>
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Manotick</a>
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Embrun</a>
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Rockland</a>
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Gatineau</a>
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Hull</a>
+      <a href="#contact" class="area-tag"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="6" r="3"/><path d="M7 13S1 8.5 1 6a6 6 0 1112 0c0 2.5-6 7-6 7z"/></svg> Aylmer</a>
+    </div>
+  </div>
+</section>
 
-    <div class="gallery__grid reveal-scale">
-      <div class="gallery__item">
-        <div class="gallery__item-bg"></div>
-        <div class="gallery__item-overlay">
-          <div class="gallery__item-title">Bay Window Replacement</div>
-          <div class="gallery__item-tag">Kanata, ON</div>
+<!-- ═══════════════════════════════════════════
+     BEFORE / AFTER
+     ═══════════════════════════════════════════ -->
+<section class="section" id="beforeafter" aria-label="Before and after transformations">
+  <div class="section-inner">
+    <div class="section-header center reveal">
+      <span class="section-label">Transformations</span>
+      <h2 class="section-title">See the Difference</h2>
+      <p class="section-sub">Hover over each comparison to reveal the transformation. New windows don't just look better — they perform better.</p>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-item reveal-scale" data-delay="1">
+        <div class="ba-before">
+          <div class="ba-window-old"></div>
+          <span class="ba-label ba-label-before">Before</span>
+        </div>
+        <div class="ba-after">
+          <div class="ba-window-new"></div>
+          <span class="ba-label ba-label-after">After</span>
         </div>
       </div>
-
-      <div class="gallery__item">
-        <div class="gallery__item-bg"></div>
-        <div class="gallery__item-overlay">
-          <div class="gallery__item-title">Modern Entry Door</div>
-          <div class="gallery__item-tag">Orleans, ON</div>
+      <div class="ba-item reveal-scale" data-delay="2">
+        <div class="ba-before" style="background:linear-gradient(180deg,#A89C8E 0%,#8E8275 50%,#7A6E62 100%)">
+          <div class="ba-window-old"></div>
+          <span class="ba-label ba-label-before">Before</span>
+        </div>
+        <div class="ba-after" style="background:linear-gradient(180deg,#E2DAD0 0%,#D5CABC 50%,#C5DDE8 100%)">
+          <div class="ba-window-new"></div>
+          <span class="ba-label ba-label-after">After</span>
         </div>
       </div>
-
-      <div class="gallery__item">
-        <div class="gallery__item-bg"></div>
-        <div class="gallery__item-overlay">
-          <div class="gallery__item-title">Casement Windows</div>
-          <div class="gallery__item-tag">Nepean, ON</div>
+      <div class="ba-item reveal-scale" data-delay="3">
+        <div class="ba-before" style="background:linear-gradient(135deg,#B0A595 0%,#998E80 60%,#877B6E 100%)">
+          <div class="ba-window-old"></div>
+          <span class="ba-label ba-label-before">Before</span>
         </div>
-      </div>
-
-      <div class="gallery__item">
-        <div class="gallery__item-bg"></div>
-        <div class="gallery__item-overlay">
-          <div class="gallery__item-title">Patio Door System</div>
-          <div class="gallery__item-tag">Barrhaven, ON</div>
-        </div>
-      </div>
-
-      <div class="gallery__item">
-        <div class="gallery__item-bg"></div>
-        <div class="gallery__item-overlay">
-          <div class="gallery__item-title">Full Home — 16 Units</div>
-          <div class="gallery__item-tag">Gloucester, ON</div>
-        </div>
-      </div>
-
-      <div class="gallery__item">
-        <div class="gallery__item-bg"></div>
-        <div class="gallery__item-overlay">
-          <div class="gallery__item-title">French Doors</div>
-          <div class="gallery__item-tag">Gatineau, QC</div>
+        <div class="ba-after" style="background:linear-gradient(135deg,#EDE5DA 0%,#D8CFC2 40%,#D0E8F0 100%)">
+          <div class="ba-window-new"></div>
+          <span class="ba-label ba-label-after">After</span>
         </div>
       </div>
     </div>
@@ -2123,86 +2023,102 @@ p {
 <!-- ═══════════════════════════════════════════
      CONTACT
      ═══════════════════════════════════════════ -->
-<section class="section" id="contact" aria-label="Contact Us">
-  <div class="container">
-    <div class="contact__grid">
-      <div class="contact__info reveal-left">
-        <span class="section-label">Get In Touch</span>
-        <h2>Ready to start<br>your project?</h2>
-        <p>Book a free consultation or ask us anything. We respond within 24 hours — usually much faster.</p>
+<section class="section" id="contact" aria-label="Contact us">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <span class="section-label">Get in Touch</span>
+        <h3>Ready to Transform Your Home?</h3>
+        <p class="section-sub" style="margin-bottom:2rem">Whether you need a single window or a whole-home upgrade, we're here to help. Contact us today for a free, no-obligation consultation.</p>
 
-        <ul class="contact__details">
-          <li>
-            <svg class="contact__details-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-            </svg>
-            <a href="tel:+16135550199">(613) 555-0199</a>
-          </li>
-          <li>
-            <svg class="contact__details-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <rect x="2" y="4" width="20" height="16" rx="2"/>
-              <path d="M22 4l-10 8L2 4"/>
-            </svg>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h16v14H2z"/><path d="M2 3l8 7 8-7"/></svg>
+          </div>
+          <div>
+            <h5>Email Us</h5>
             <a href="mailto:info@prismacanada.ca">info@prismacanada.ca</a>
-          </li>
-          <li>
-            <svg class="contact__details-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-            Ottawa, Ontario, Canada
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 13.5v2.4a1.6 1.6 0 01-1.7 1.6A15.8 15.8 0 013 5.2 1.6 1.6 0 014.6 3.5H7l1.4 3.5-2 1.2a12.8 12.8 0 006 6l1.2-2L17 13.5z"/></svg>
+          </div>
+          <div>
+            <h5>Call Us</h5>
+            <a href="tel:6135550199">(613) 555-0199</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="8" r="3"/><path d="M10 18S3 12 3 8a7 7 0 1114 0c0 4-7 10-7 10z"/></svg>
+          </div>
+          <div>
+            <h5>Visit Us</h5>
+            <p>Ottawa, Ontario, Canada</p>
+          </div>
+        </div>
 
-        <div class="contact__areas">
-          <h4>Service Areas</h4>
-          <div class="contact__areas-list">
-            <span class="contact__area-tag">Ottawa</span>
-            <span class="contact__area-tag">Nepean</span>
-            <span class="contact__area-tag">Kanata</span>
-            <span class="contact__area-tag">Orleans</span>
-            <span class="contact__area-tag">Barrhaven</span>
-            <span class="contact__area-tag">Gloucester</span>
-            <span class="contact__area-tag">Gatineau</span>
+        <div class="contact-hours">
+          <h5>Business Hours</h5>
+          <div class="contact-hours-row">
+            <span>Monday – Friday</span>
+            <span>8:00 AM – 6:00 PM</span>
+          </div>
+          <div class="contact-hours-row">
+            <span>Saturday</span>
+            <span>9:00 AM – 2:00 PM</span>
+          </div>
+          <div class="contact-hours-row">
+            <span>Sunday</span>
+            <span>Closed</span>
           </div>
         </div>
       </div>
 
-      <div class="contact__form-wrapper reveal-right">
-        <form class="contact__form" id="contactForm" aria-label="Contact form">
-          <div class="form-group">
-            <label for="contactName">Name</label>
-            <input type="text" id="contactName" name="name" placeholder="Your full name" required autocomplete="name">
+      <div class="contact-form-wrap reveal-right">
+        <form class="quote-form" id="contactForm" aria-label="Contact form" novalidate>
+          <div class="form-header">
+            <h3>Request a Free Quote</h3>
+            <p>We'll get back to you within 24 hours</p>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Your name" required aria-required="true">
+              <div class="form-error">Please enter your name</div>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Phone</label>
+              <input type="tel" id="contactPhone" name="phone" placeholder="(613) 000-0000" required aria-required="true">
+              <div class="form-error">Please enter a valid phone number</div>
+            </div>
           </div>
           <div class="form-group">
             <label for="contactEmail">Email</label>
-            <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required autocomplete="email">
+            <input type="email" id="contactEmail" name="email" placeholder="you@email.com" required aria-required="true">
+            <div class="form-error">Please enter a valid email</div>
           </div>
           <div class="form-group">
-            <label for="contactPhone">Phone</label>
-            <input type="tel" id="contactPhone" name="phone" placeholder="(613) 555-0000" autocomplete="tel">
+            <label for="contactProject">Project Type</label>
+            <select id="contactProject" name="project" required aria-required="true">
+              <option value="" disabled selected>Select your project</option>
+              <option value="windows-replace">Window Replacement</option>
+              <option value="windows-new">New Window Installation</option>
+              <option value="doors-entry">Entry Door</option>
+              <option value="doors-patio">Patio Door</option>
+              <option value="windows-doors">Windows & Doors</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="form-error">Please select a project type</div>
           </div>
           <div class="form-group">
-            <label for="contactMessage">Message</label>
-            <textarea id="contactMessage" name="message" placeholder="Tell us about your project — window or door type, quantity, any special requirements..." required></textarea>
+            <label for="contactMessage">Message <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></label>
+            <textarea id="contactMessage" name="message" placeholder="Tell us about your project..."></textarea>
           </div>
-          <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">
-            Send Message
-          </button>
+          <button type="submit" class="form-submit">Send Message</button>
+          <p class="form-note">🔒 Your information is secure and never shared</p>
         </form>
-
-        <div class="form-success" id="formSuccess">
-          <svg class="form-success__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <circle cx="32" cy="32" r="28"/>
-            <path d="M20 32 L28 40 L44 24" stroke-width="3"/>
-          </svg>
-          <h3>Message Sent!</h3>
-          <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
-        </div>
-
-        <div class="contact__map" aria-label="Map placeholder">
-          <span>Ottawa, ON — Map coming soon</span>
-        </div>
       </div>
     </div>
   </div>
@@ -2212,227 +2128,206 @@ p {
      FOOTER
      ═══════════════════════════════════════════ -->
 <footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__top">
-      <div class="footer__brand">
-        <div class="nav__logo" style="margin-bottom: 0;">
-          <svg width="36" height="36" viewBox="0 0 42 42" fill="none" aria-hidden="true">
-            <polygon points="21,4 38,38 4,38" fill="#3D4049"/>
-            <path d="M21 8 L23 14 L28 12 L25 17 L30 18 L25 21 L28 26 L23 24 L21 30 L19 24 L14 26 L17 21 L12 18 L17 17 L14 12 L19 14 Z" fill="#D32F2F"/>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:0.5rem">
+          <svg viewBox="0 0 36 36" fill="none" width="32" height="32">
+            <polygon points="18,2 32,30 4,30" fill="rgba(255,255,255,0.2)"/>
+            <path d="M18 8C18 8 14 14 14 18C14 20.5 15.8 22 18 22C20.2 22 22 20.5 22 18C22 14 18 8 18 8Z" fill="#D32F2F"/>
           </svg>
-          <span class="nav__logo-text brand-name" style="font-size:1rem;">Prisma</span>
+          <span class="nav-logo-text">Prisma</span>
         </div>
-        <p>Precision window and door installation across Ottawa, Ontario. Canadian craftsmanship you can trust.</p>
+        <p>Premium window and door installation serving the Greater Ottawa-Gatineau region since 2009. Licensed, insured, and committed to excellence.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M9 1.5H7A3.5 3.5 0 003.5 5v2h-2v3h2v5h3v-5h2l.5-3H8.5V5A.5.5 0 019 4.5h1.5v-3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="2" width="12" height="12" rx="3"/><circle cx="8" cy="8" r="3"/><circle cx="12" cy="4" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Google Business">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 12.6A5.6 5.6 0 118 2.4a5.6 5.6 0 010 11.2zM7.3 5H9v4.2l2.5 1.5-.6 1-3-1.8V5z"/></svg>
+          </a>
+        </div>
       </div>
-
-      <div class="footer__col">
-        <h4>Services</h4>
+      <div>
+        <h6>Company</h6>
         <ul>
-          <li><a href="#services">Window Installation</a></li>
-          <li><a href="#services">Door Installation</a></li>
-          <li><a href="#services">Demolition & Removal</a></li>
-          <li><a href="#services">Trim & Finishing</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#why">About Us</a></li>
           <li><a href="#process">Our Process</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#warranty">Warranty</a></li>
+          <li><a href="#financing">Financing</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
         </ul>
       </div>
-
-      <div class="footer__col">
-        <h4>Contact</h4>
+      <div>
+        <h6>Products</h6>
         <ul>
-          <li><a href="tel:+16135550199">(613) 555-0199</a></li>
-          <li><a href="mailto:info@prismacanada.ca">info@prismacanada.ca</a></li>
-          <li><a href="#calculator">Free Estimate</a></li>
+          <li><a href="#windows">Casement Windows</a></li>
+          <li><a href="#windows">Double-Hung Windows</a></li>
+          <li><a href="#windows">Bay & Bow Windows</a></li>
+          <li><a href="#windows">Sliding Windows</a></li>
+          <li><a href="#windows">Entry Doors</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Service Areas</h6>
+        <ul>
+          <li><a href="#areas">Ottawa</a></li>
+          <li><a href="#areas">Kanata & Nepean</a></li>
+          <li><a href="#areas">Orléans & Gloucester</a></li>
+          <li><a href="#areas">Barrhaven & Stittsville</a></li>
+          <li><a href="#areas">Gatineau & Hull</a></li>
         </ul>
       </div>
     </div>
-
-    <div class="footer__bottom">
-      <span>&copy; 2026 Prisma Windows & Doors Inc. All rights reserved.</span>
-      <span>Ottawa, Ontario, Canada</span>
+    <div class="footer-bottom">
+      <span>© 2026 Prisma Windows and Doors Inc. All rights reserved.</span>
+      <span>HST #749709226RT0001</span>
     </div>
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════════════
-     JAVASCRIPT
-     ═══════════════════════════════════════════ -->
+<!-- Back to Top -->
+<a href="#hero" class="back-top" id="backTop" aria-label="Back to top">
+  <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 14V4M4 8l5-5 5 5"/></svg>
+</a>
+
 <script>
 (function() {
   'use strict';
 
-  // ── Navigation scroll effect ──
-  const nav = document.getElementById('nav');
-  let lastScroll = 0;
-
-  function handleNavScroll() {
-    const scrollY = window.scrollY;
-    if (scrollY > 80) {
-      nav.classList.add('nav--scrolled');
-    } else {
-      nav.classList.remove('nav--scrolled');
-    }
-    lastScroll = scrollY;
+  // ─── Scroll Progress ───
+  const scrollProgress = document.getElementById('scrollProgress');
+  function updateScrollProgress() {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    scrollProgress.style.width = pct + '%';
   }
 
-  window.addEventListener('scroll', handleNavScroll, { passive: true });
+  // ─── Nav scroll state ───
+  const nav = document.getElementById('nav');
+  const backTop = document.getElementById('backTop');
+  function updateNav() {
+    const scrolled = window.scrollY > 60;
+    nav.classList.toggle('scrolled', scrolled);
+    backTop.classList.toggle('visible', window.scrollY > 600);
+  }
 
-  // ── Mobile menu ──
-  const hamburger = document.getElementById('navHamburger');
-  const mobileOverlay = document.getElementById('mobileOverlay');
-  const mobileLinks = document.querySelectorAll('.mobile-link');
+  window.addEventListener('scroll', function() {
+    updateScrollProgress();
+    updateNav();
+  }, { passive: true });
 
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    mobileOverlay.classList.toggle('active');
-    document.body.style.overflow = mobileOverlay.classList.contains('active') ? 'hidden' : '';
-    hamburger.setAttribute('aria-expanded', mobileOverlay.classList.contains('active'));
+  // ─── Mobile menu ───
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+    this.setAttribute('aria-expanded', mobileMenu.classList.contains('open'));
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
   });
-
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
+  document.querySelectorAll('.mobile-link').forEach(function(link) {
+    link.addEventListener('click', function() {
       hamburger.classList.remove('active');
-      mobileOverlay.classList.remove('active');
-      document.body.style.overflow = '';
+      mobileMenu.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
     });
   });
 
-  // ── Scroll reveal (Intersection Observer) ──
-  const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+  // ─── Intersection Observer (reveal animations) ───
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
+        observer.unobserve(entry.target);
       }
     });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -60px 0px'
-  });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(function(el) { observer.observe(el); });
 
-  revealElements.forEach(el => revealObserver.observe(el));
-
-  // ── Path toggle (Contractor / Retail) ──
-  const pathBtns = document.querySelectorAll('.paths__toggle-btn');
-  pathBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      pathBtns.forEach(b => {
-        b.classList.remove('active');
-        b.setAttribute('aria-pressed', 'false');
-      });
-      btn.classList.add('active');
-      btn.setAttribute('aria-pressed', 'true');
-
-      document.querySelectorAll('.paths__content').forEach(c => c.classList.remove('active'));
-      document.getElementById('path-' + btn.dataset.path).classList.add('active');
+  // ─── Counter animation ───
+  const counters = document.querySelectorAll('.counter');
+  const counterObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.getAttribute('data-target'));
+        const duration = 2000;
+        const start = performance.now();
+        function animate(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 4);
+          el.textContent = Math.round(eased * target);
+          if (progress < 1) requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+        counterObserver.unobserve(el);
+      }
     });
-  });
+  }, { threshold: 0.3 });
+  counters.forEach(function(el) { counterObserver.observe(el); });
 
-  // ── Estimate Calculator ──
-  // Real pricing based on VNHS Price List 2026
-  // Window: $14.5/ln ft, min $150 + $25 removal. Small ~10sqft, Med ~15sqft, Lg ~25sqft+
-  // Entry door: $450-$830. Patio: $400-$600+
-  const pricing = {
-    window: { small: [175, 300], medium: [250, 450], large: [400, 750] },
-    door:   { small: [450, 630], medium: [530, 830], large: [630, 1100] }
-  };
-
-  let calcState = { type: 'window', size: 'medium', qty: 1 };
-
-  function updateCalc() {
-    const range = pricing[calcState.type][calcState.size];
-    const low = range[0] * calcState.qty;
-    const high = range[1] * calcState.qty;
-    document.getElementById('calcPrice').textContent =
-      '$' + low.toLocaleString() + ' – $' + high.toLocaleString();
-
-    const result = document.getElementById('calcResult');
-    result.classList.remove('visible');
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        result.classList.add('visible');
-      });
+  // ─── Form validation ───
+  function validateForm(form) {
+    let valid = true;
+    const groups = form.querySelectorAll('.form-group');
+    groups.forEach(function(group) {
+      group.classList.remove('error');
+      const input = group.querySelector('input, select, textarea');
+      if (!input || !input.required) return;
+      if (input.type === 'email') {
+        if (!input.value || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) {
+          group.classList.add('error');
+          valid = false;
+        }
+      } else if (input.tagName === 'SELECT') {
+        if (!input.value) {
+          group.classList.add('error');
+          valid = false;
+        }
+      } else {
+        if (!input.value.trim()) {
+          group.classList.add('error');
+          valid = false;
+        }
+      }
     });
+    return valid;
   }
 
-  // Type buttons
-  document.querySelectorAll('[data-type]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('[data-type]').forEach(b => {
-        b.classList.remove('active');
-        b.setAttribute('aria-checked', 'false');
-      });
-      btn.classList.add('active');
-      btn.setAttribute('aria-checked', 'true');
-      calcState.type = btn.dataset.type;
-      updateCalc();
-    });
-  });
-
-  // Size buttons
-  document.querySelectorAll('[data-size]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('[data-size]').forEach(b => {
-        b.classList.remove('active');
-        b.setAttribute('aria-checked', 'false');
-      });
-      btn.classList.add('active');
-      btn.setAttribute('aria-checked', 'true');
-      calcState.size = btn.dataset.size;
-      updateCalc();
-    });
-  });
-
-  // Quantity buttons
-  document.getElementById('calcMinus').addEventListener('click', () => {
-    if (calcState.qty > 1) {
-      calcState.qty--;
-      document.getElementById('calcQty').textContent = calcState.qty;
-      updateCalc();
-    }
-  });
-
-  document.getElementById('calcPlus').addEventListener('click', () => {
-    if (calcState.qty < 50) {
-      calcState.qty++;
-      document.getElementById('calcQty').textContent = calcState.qty;
-      updateCalc();
-    }
-  });
-
-  // ── Contact form ──
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    this.style.display = 'none';
-    document.getElementById('formSuccess').classList.add('active');
-  });
-
-  // ── Smooth scroll for anchor links ──
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+  document.querySelectorAll('#quoteForm, #contactForm').forEach(function(form) {
+    form.addEventListener('submit', function(e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        const navHeight = nav.offsetHeight;
-        const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight;
-        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+      if (validateForm(this)) {
+        const btn = this.querySelector('.form-submit');
+        btn.classList.add('success');
+        btn.textContent = '✓ Message Sent!';
+        setTimeout(function() {
+          btn.classList.remove('success');
+          btn.textContent = form.id === 'quoteForm' ? 'Request Free Quote' : 'Send Message';
+          form.reset();
+        }, 3000);
       }
+    });
+  });
+
+  // ─── Remove error on input ───
+  document.querySelectorAll('.form-group input, .form-group select').forEach(function(el) {
+    el.addEventListener('input', function() {
+      this.closest('.form-group').classList.remove('error');
+    });
+    el.addEventListener('change', function() {
+      this.closest('.form-group').classList.remove('error');
     });
   });
 
 })();
 </script>
-
 </body>
 </html>
