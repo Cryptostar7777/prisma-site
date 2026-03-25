@@ -64,6 +64,18 @@
   --nav-h: 72px;
 }
 
+/* TOP BAR */
+.top-bar { background: var(--prisma-navy); padding: 8px 0; }
+.top-bar-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: flex-end; }
+.top-bar-phone { color: rgba(255,255,255,0.9); font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 6px; }
+.top-bar-phone:hover { color: #fff; }
+.top-bar-phone svg { flex-shrink: 0; }
+
+/* HERO BUTTONS */
+.hero-buttons { display: flex; gap: 1rem; margin-top: 1.5rem; }
+.btn-outline { display: inline-flex; align-items: center; padding: 0.75rem 2rem; border: 2px solid rgba(255,255,255,0.8); color: #fff; border-radius: 6px; font-weight: 600; font-size: 0.95rem; letter-spacing: 0.02em; transition: all 0.3s var(--ease); }
+.btn-outline:hover { background: rgba(255,255,255,0.15); border-color: #fff; }
+
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
 body { font-family: var(--font); color: var(--prisma-dark); background: var(--prisma-cream); line-height: 1.6; overflow-x: hidden; }
 img { max-width: 100%; display: block; }
@@ -1262,6 +1274,16 @@ ul { list-style: none; }
   <p>Prisma Windows and Doors — Ottawa's trusted window and door experts. Energy Star certified products, 5-year warranty. Call (343) 204-7703 for a free quote.</p>
 </noscript>
 
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <a href="tel:+13432047703" class="top-bar-phone">
+      <svg viewBox="0 0 16 16" fill="currentColor" width="14" height="14"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/></svg>
+      Call Us Anytime: 1-888-999-4455
+    </a>
+  </div>
+</div>
+
 <!-- Scroll Progress -->
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
@@ -1275,11 +1297,10 @@ ul { list-style: none; }
     <span class="nav-logo-text">Prisma</span>
   </a>
   <div class="nav-links">
-    <a href="#windows">Products</a>
-    <a href="#why">Why Us</a>
-    <a href="#warranty">Warranty</a>
-    <a href="#testimonials">Reviews</a>
-    <a href="#contact">Contact</a>
+    <a href="#why">About Us</a>
+    <a href="#windows">Services</a>
+    <a href="#windows">Our Works</a>
+    <a href="#contact">Contact Us</a>
     <a href="#hero" class="nav-cta">Get a Quote</a>
   </div>
   <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -1289,13 +1310,10 @@ ul { list-style: none; }
 
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
-  <a href="#windows" class="mobile-link">Products</a>
-  <a href="#why" class="mobile-link">Why Us</a>
-  <a href="#warranty" class="mobile-link">Warranty</a>
-
-  <a href="#testimonials" class="mobile-link">Reviews</a>
-  <a href="#areas" class="mobile-link">Service Areas</a>
-  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="#why" class="mobile-link">About Us</a>
+  <a href="#windows" class="mobile-link">Services</a>
+  <a href="#windows" class="mobile-link">Our Works</a>
+  <a href="#contact" class="mobile-link">Contact Us</a>
   <a href="#hero" class="mobile-link" style="color:var(--prisma-warm);font-weight:700;">Get a Quote</a>
 </div>
 
@@ -1304,76 +1322,42 @@ ul { list-style: none; }
      ═══════════════════════════════════════════ -->
 <section class="hero" id="hero" aria-label="Hero">
   <div class="hero-content">
-    <div class="hero-badge reveal">
-      <svg viewBox="0 0 14 14" fill="none"><path d="M7 1C7 1 5.5 4 5.5 6C5.5 7.4 6.2 8 7 8C7.8 8 8.5 7.4 8.5 6C8.5 4 7 1 7 1Z" fill="#D32F2F"/></svg>
-      Proudly Canadian · Serving Ottawa Since 2009
-    </div>
     <h1 class="reveal" data-delay="1">
-      Ottawa's Trusted<br>
-      Window & Door<br>
-      <span class="accent">Experts</span>
+      Prisma Quality Windows &<br>
+      Doors for <span class="accent">Ontario Homes</span>
     </h1>
     <p class="hero-sub reveal" data-delay="2">
-      Precision installation backed by warranty you can count on. Energy Star certified products and craftsmanship that stands the test of Canadian winters.
+      <strong>Custom-built doors and windows for your home</strong><br>
+      Quality installations
     </p>
-    <div class="hero-trust reveal" data-delay="3">
-      <div class="hero-trust-item">
-        <svg viewBox="0 0 18 18" fill="none"><path d="M9 1L11.5 6L17 6.8L13 10.7L14 16.2L9 13.5L4 16.2L5 10.7L1 6.8L6.5 6L9 1Z" fill="currentColor"/></svg>
-        Energy Star Certified
-      </div>
-      <div class="hero-trust-item">
-        <svg viewBox="0 0 18 18" fill="none"><path d="M16 5L7 14L2 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Licensed & Insured
-      </div>
-      <div class="hero-trust-item">
-        <svg viewBox="0 0 18 18" fill="none"><path d="M9 1V17M1 9H17M3 3L15 15M15 3L3 15" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-        5-Year Warranty
-      </div>
+    <div class="hero-buttons reveal" data-delay="3">
+      <a href="#windows" class="btn-primary">Our Works</a>
+      <a href="#contact" class="btn-outline">Contact Us</a>
     </div>
   </div>
 
   <div class="hero-form-wrap">
-    <form class="quote-form reveal-right" id="quoteForm" aria-label="Request a free quote" novalidate>
+    <form class="quote-form reveal-right" id="quoteForm" aria-label="Book a free estimate" novalidate>
       <div class="form-header">
-        <h3>Get Your Free Quote</h3>
-        <p>Response within 24 hours — no obligation</p>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label for="heroName">Name</label>
-          <input type="text" id="heroName" name="name" placeholder="Your name" required aria-required="true">
-          <div class="form-error">Please enter your name</div>
-        </div>
-        <div class="form-group">
-          <label for="heroPhone">Phone</label>
-          <input type="tel" id="heroPhone" name="phone" placeholder="(613) 000-0000" required aria-required="true">
-          <div class="form-error">Please enter a valid phone number</div>
-        </div>
+        <h3>Book A Free Estimate</h3>
       </div>
       <div class="form-group">
-        <label for="heroEmail">Email</label>
-        <input type="email" id="heroEmail" name="email" placeholder="you@email.com" required aria-required="true">
+        <input type="text" id="heroName" name="name" placeholder="Your Name" required aria-required="true">
+        <div class="form-error">Please enter your name</div>
+      </div>
+      <div class="form-group">
+        <input type="tel" id="heroPhone" name="phone" placeholder="Your Phone" required aria-required="true">
+        <div class="form-error">Please enter a valid phone number</div>
+      </div>
+      <div class="form-group">
+        <input type="email" id="heroEmail" name="email" placeholder="Your Email Adress" required aria-required="true">
         <div class="form-error">Please enter a valid email</div>
       </div>
       <div class="form-group">
-        <label for="heroProject">Project Type</label>
-        <select id="heroProject" name="project" required aria-required="true">
-          <option value="" disabled selected>Select your project</option>
-          <option value="windows-replace">Window Replacement</option>
-          <option value="windows-new">New Window Installation</option>
-          <option value="doors-entry">Entry Door</option>
-          <option value="doors-patio">Patio Door</option>
-          <option value="windows-doors">Windows & Doors</option>
-          <option value="other">Other</option>
-        </select>
-        <div class="form-error">Please select a project type</div>
+        <input type="text" id="heroCity" name="city" placeholder="City" required aria-required="true">
+        <div class="form-error">Please enter your city</div>
       </div>
-      <div class="form-group">
-        <label for="heroMessage">Message <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></label>
-        <textarea id="heroMessage" name="message" placeholder="Tell us about your project..."></textarea>
-      </div>
-      <button type="submit" class="form-submit">Request Free Quote</button>
-      <p class="form-note">🔒 Your information is secure and never shared</p>
+      <button type="submit" class="form-submit">Request Now</button>
     </form>
   </div>
 </section>
