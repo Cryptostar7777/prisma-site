@@ -172,8 +172,7 @@ ul { list-style: none; }
   z-index: 1001;
 }
 .nav-logo svg { width: 36px; height: 36px; }
-.nav-logo-img { height: 44px; width: auto; object-fit: contain; }
-.footer-logo-img { height: 36px; filter: brightness(0) invert(1); opacity: 0.9; }
+.nav-logo-svg { height: 44px; width: auto; }
 .nav-logo-text {
   font-size: 1.1rem;
   font-weight: 600;
@@ -1269,7 +1268,16 @@ ul { list-style: none; }
 <!-- Navigation -->
 <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
   <a href="#hero" class="nav-logo" aria-label="Prisma Windows and Doors — Home">
-    <img src="logo.jpg" alt="Prisma Windows and Doors" class="nav-logo-img">
+    <svg viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="nav-logo-svg" aria-hidden="true">
+      <!-- Maple Leaf -->
+      <g transform="translate(2,4) scale(0.038)">
+        <path d="M512 0C500 30 470 80 440 120C410 100 370 90 340 90C350 130 360 170 350 200C310 180 260 170 220 170C240 220 250 270 240 310C200 290 150 280 100 290C130 330 150 380 150 420C110 420 60 430 20 460C60 470 110 490 140 530C110 560 80 600 60 640C100 620 160 610 200 620C190 670 190 720 200 770C240 740 290 720 340 720C340 760 350 810 370 850C400 810 440 780 480 770L512 850L544 770C580 780 620 810 650 850C670 810 680 760 680 720C730 720 780 740 820 770C830 720 830 670 820 620C860 610 920 620 960 640C940 600 910 560 880 530C910 490 960 470 1000 460C960 430 910 420 870 420C870 380 890 330 920 290C870 280 820 290 780 310C770 270 780 220 800 170C760 170 710 180 670 200C660 170 670 130 680 90C650 90 610 100 580 120C550 80 520 30 512 0Z" fill="#D32F2F"/>
+      </g>
+      <!-- Triangle Prism -->
+      <polygon points="52,8 68,40 36,40" fill="#3D4049"/>
+      <!-- PRISMA text -->
+      <text x="78" y="34" font-family="Montserrat, sans-serif" font-weight="700" font-size="22" letter-spacing="3" fill="#3D4049">PRISMA</text>
+    </svg>
   </a>
   <div class="nav-links">
     <a href="#windows">Products</a>
@@ -1940,7 +1948,13 @@ ul { list-style: none; }
     <div class="footer-top">
       <div class="footer-brand">
         <div class="nav-logo" style="margin-bottom:0.5rem">
-          <img src="logo.jpg" alt="Prisma Windows and Doors" class="nav-logo-img footer-logo-img">
+          <svg viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="nav-logo-svg" aria-hidden="true">
+            <g transform="translate(2,4) scale(0.038)">
+              <path d="M512 0C500 30 470 80 440 120C410 100 370 90 340 90C350 130 360 170 350 200C310 180 260 170 220 170C240 220 250 270 240 310C200 290 150 280 100 290C130 330 150 380 150 420C110 420 60 430 20 460C60 470 110 490 140 530C110 560 80 600 60 640C100 620 160 610 200 620C190 670 190 720 200 770C240 740 290 720 340 720C340 760 350 810 370 850C400 810 440 780 480 770L512 850L544 770C580 780 620 810 650 850C670 810 680 760 680 720C730 720 780 740 820 770C830 720 830 670 820 620C860 610 920 620 960 640C940 600 910 560 880 530C910 490 960 470 1000 460C960 430 910 420 870 420C870 380 890 330 920 290C870 280 820 290 780 310C770 270 780 220 800 170C760 170 710 180 670 200C660 170 670 130 680 90C650 90 610 100 580 120C550 80 520 30 512 0Z" fill="#D32F2F"/>
+            </g>
+            <polygon points="52,8 68,40 36,40" fill="rgba(255,255,255,0.3)"/>
+            <text x="78" y="34" font-family="Montserrat, sans-serif" font-weight="700" font-size="22" letter-spacing="3" fill="rgba(255,255,255,0.9)">PRISMA</text>
+          </svg>
         </div>
         <p>Premium window and door installation serving the Greater Ottawa-Gatineau region since 2009. Licensed, insured, and committed to excellence.</p>
         <div class="footer-social">
