@@ -172,6 +172,8 @@ ul { list-style: none; }
   z-index: 1001;
 }
 .nav-logo svg { width: 36px; height: 36px; }
+.nav-logo-img { height: 44px; width: auto; object-fit: contain; }
+.footer-logo-img { height: 36px; filter: brightness(0) invert(1); opacity: 0.9; }
 .nav-logo-text {
   font-size: 1.1rem;
   font-weight: 600;
@@ -1267,11 +1269,7 @@ ul { list-style: none; }
 <!-- Navigation -->
 <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
   <a href="#hero" class="nav-logo" aria-label="Prisma Windows and Doors — Home">
-    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <polygon points="18,2 32,30 4,30" fill="#3D4049"/>
-      <path d="M18 8C18 8 14 14 14 18C14 20.5 15.8 22 18 22C20.2 22 22 20.5 22 18C22 14 18 8 18 8Z" fill="#D32F2F"/>
-    </svg>
-    <span class="nav-logo-text">Prisma</span>
+    <img src="logo.jpg" alt="Prisma Windows and Doors" class="nav-logo-img">
   </a>
   <div class="nav-links">
     <a href="#windows">Products</a>
@@ -1942,11 +1940,7 @@ ul { list-style: none; }
     <div class="footer-top">
       <div class="footer-brand">
         <div class="nav-logo" style="margin-bottom:0.5rem">
-          <svg viewBox="0 0 36 36" fill="none" width="32" height="32">
-            <polygon points="18,2 32,30 4,30" fill="rgba(255,255,255,0.2)"/>
-            <path d="M18 8C18 8 14 14 14 18C14 20.5 15.8 22 18 22C20.2 22 22 20.5 22 18C22 14 18 8 18 8Z" fill="#D32F2F"/>
-          </svg>
-          <span class="nav-logo-text">Prisma</span>
+          <img src="logo.jpg" alt="Prisma Windows and Doors" class="nav-logo-img footer-logo-img">
         </div>
         <p>Premium window and door installation serving the Greater Ottawa-Gatineau region since 2009. Licensed, insured, and committed to excellence.</p>
         <div class="footer-social">
