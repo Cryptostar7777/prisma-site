@@ -70,6 +70,7 @@
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
+  background: var(--prisma-cream);
   transition: box-shadow 0.4s, background 0.4s;
 }
 .header-wrap.scrolled {
@@ -77,9 +78,6 @@
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   box-shadow: 0 2px 20px rgba(43,45,59,0.08);
-}
-.header-wrap.scrolled .top-bar {
-  background: var(--prisma-navy);
 }
 .top-bar { background: var(--prisma-navy); padding: 8px 0; }
 .top-bar-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: flex-end; }
@@ -1242,6 +1240,8 @@ ul { list-style: none; }
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
+  /* Mobile sticky bottom bar */
+  .mobile-sticky-bar { display: flex !important; }
   .hero h1 { font-size: 2.2rem; }
   .form-row { grid-template-columns: 1fr; }
   .windows-grid { grid-template-columns: 1fr; }
@@ -1290,6 +1290,43 @@ ul { list-style: none; }
 }
 .back-top:hover { background: var(--prisma-dark); }
 .back-top svg { width: 18px; height: 18px; }
+
+/* Mobile sticky bottom bar — phone + CTA always visible */
+.mobile-sticky-bar {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: var(--prisma-white);
+  box-shadow: 0 -2px 16px rgba(43,45,59,0.12);
+  padding: 0.6rem 1rem;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-sticky-bar a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.75rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+.mobile-sticky-call {
+  background: var(--prisma-white);
+  color: var(--prisma-navy) !important;
+  border: 2px solid var(--prisma-navy);
+}
+.mobile-sticky-quote {
+  background: var(--prisma-red) !important;
+  color: #fff !important;
+  border: 2px solid var(--prisma-red);
+}
+.mobile-sticky-bar svg { width: 16px; height: 16px; flex-shrink: 0; }
 
 /* ═══════════════════════════════════════════
    PROMO BANNER — Summer Savings
@@ -2169,6 +2206,18 @@ ul { list-style: none; }
 <a href="#hero" class="back-top" id="backTop" aria-label="Back to top">
   <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 14V4M4 8l5-5 5 5"/></svg>
 </a>
+
+<!-- Mobile Sticky Bar -->
+<div class="mobile-sticky-bar">
+  <a href="tel:+13432047703" class="mobile-sticky-call">
+    <svg viewBox="0 0 16 16" fill="currentColor"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/></svg>
+    Call Now
+  </a>
+  <a href="#hero" class="mobile-sticky-quote">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 11a2 2 0 01-2 2H4l-3 3V4a2 2 0 012-2h9a2 2 0 012 2v7z"/></svg>
+    Free Quote
+  </a>
+</div>
 
 <script>
 (function() {
