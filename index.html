@@ -1531,27 +1531,32 @@ ul { list-style: none; }
   </div>
 
   <div class="hero-form-wrap">
-    <form class="quote-form reveal-right" id="quoteForm" aria-label="Book a free estimate" novalidate>
+    <form class="quote-form reveal-right" id="quoteForm" aria-label="Get your free quote" novalidate>
       <div class="form-header">
-        <h3>Book A Free Estimate</h3>
+        <h3>Get Your Free Quote</h3>
+        <p>No obligation — we'll respond within 24 hours</p>
       </div>
       <div class="form-group">
         <input type="text" id="heroName" name="name" placeholder="Your Name" required aria-required="true">
         <div class="form-error">Please enter your name</div>
       </div>
       <div class="form-group">
-        <input type="tel" id="heroPhone" name="phone" placeholder="Your Phone" required aria-required="true">
+        <input type="tel" id="heroPhone" name="phone" placeholder="Phone Number" required aria-required="true">
         <div class="form-error">Please enter a valid phone number</div>
       </div>
       <div class="form-group">
-        <input type="email" id="heroEmail" name="email" placeholder="Your Email Adress" required aria-required="true">
+        <input type="email" id="heroEmail" name="email" placeholder="Email Address" required aria-required="true">
         <div class="form-error">Please enter a valid email</div>
       </div>
       <div class="form-group">
         <input type="text" id="heroCity" name="city" placeholder="City" required aria-required="true">
         <div class="form-error">Please enter your city</div>
       </div>
-      <button type="submit" class="form-submit">Request Now</button>
+      <div class="form-group">
+        <textarea id="heroProject" name="project" placeholder="Tell us about your project, e.g. 5 windows + 1 front door replacement" rows="3"></textarea>
+      </div>
+      <button type="submit" class="form-submit">Request Free Quote</button>
+      <p class="form-note">🔒 Your information is secure and never shared</p>
     </form>
   </div>
 </section>
@@ -2285,18 +2290,62 @@ ul { list-style: none; }
     return valid;
   }
 
+  // ─── Google Sheets integration ───
+  // TODO: Deploy google-apps-script.js to Google Apps Script and paste URL here
+  var GOOGLE_SCRIPT_URL = ''; // Paste your deployed Apps Script URL here
+
+  function submitToGoogleSheets(formData, btn, form) {
+    if (!GOOGLE_SCRIPT_URL) {
+      // Demo mode — no backend connected yet
+      btn.classList.add('success');
+      btn.textContent = '✓ Request Received!';
+      setTimeout(function() {
+        btn.classList.remove('success');
+        btn.textContent = form.id === 'quoteForm' ? 'Request Free Quote' : 'Send Message';
+        btn.disabled = false;
+        form.reset();
+      }, 3000);
+      return;
+    }
+    
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    }).then(function() {
+      btn.classList.add('success');
+      btn.textContent = '✓ Request Received!';
+      setTimeout(function() {
+        btn.classList.remove('success');
+        btn.textContent = form.id === 'quoteForm' ? 'Request Free Quote' : 'Send Message';
+        btn.disabled = false;
+        form.reset();
+      }, 3000);
+    }).catch(function() {
+      btn.textContent = 'Error — try again';
+      btn.disabled = false;
+      setTimeout(function() {
+        btn.textContent = form.id === 'quoteForm' ? 'Request Free Quote' : 'Send Message';
+      }, 2000);
+    });
+  }
+
   document.querySelectorAll('#quoteForm, #contactForm').forEach(function(form) {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       if (validateForm(this)) {
-        const btn = this.querySelector('.form-submit');
-        btn.classList.add('success');
-        btn.textContent = '✓ Message Sent!';
-        setTimeout(function() {
-          btn.classList.remove('success');
-          btn.textContent = form.id === 'quoteForm' ? 'Request Free Quote' : 'Send Message';
-          form.reset();
-        }, 3000);
+        var btn = this.querySelector('.form-submit');
+        var formData = {};
+        var inputs = this.querySelectorAll('input, select, textarea');
+        inputs.forEach(function(input) {
+          if (input.name) formData[input.name] = input.value;
+        });
+        formData.source = form.id === 'quoteForm' ? 'Hero Form' : 'Contact Form';
+        submitToGoogleSheets(formData, btn, form);
       }
     });
   });
