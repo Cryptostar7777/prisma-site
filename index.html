@@ -68,10 +68,10 @@
 /* TOP BAR + STICKY HEADER WRAPPER */
 .header-wrap {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: -100px; left: 0; right: 0;
+  padding-top: calc(100px + env(safe-area-inset-top, 0px));
   z-index: 1000;
   background: var(--prisma-cream);
-  padding-top: env(safe-area-inset-top, 0px);
   transition: box-shadow 0.4s, background 0.4s;
 }
 .header-wrap.scrolled {
