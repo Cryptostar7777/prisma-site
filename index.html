@@ -62,8 +62,7 @@
   --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --nav-h: 100px;
-  --top-bar-h: 36px;
-  --header-h: calc(var(--nav-h) + var(--top-bar-h));
+  --header-h: var(--nav-h);
 }
 
 /* TOP BAR + STICKY HEADER WRAPPER */
@@ -234,6 +233,20 @@ ul { list-style: none; }
   letter-spacing: 0.08em !important;
   transition: background 0.3s, transform 0.3s !important;
 }
+/* Phone link in nav */
+.nav-phone {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--prisma-warm) !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  letter-spacing: 0.02em !important;
+  transition: color 0.3s !important;
+}
+.nav-phone::after { display: none !important; }
+.nav-phone:hover { color: var(--prisma-red) !important; }
+.nav-phone svg { flex-shrink: 0; }
 .nav-cta::after { display: none !important; }
 .nav-cta:hover { background: var(--prisma-dark) !important; transform: translateY(-1px); }
 
@@ -1471,18 +1484,8 @@ ul { list-style: none; }
 <!-- Scroll Progress -->
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-<!-- Header Wrapper (Sticky Top Bar + Nav) -->
+<!-- Header Wrapper (Sticky Nav) -->
 <header class="header-wrap" id="headerWrap">
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="top-bar-inner">
-      <a href="tel:+13432047703" class="top-bar-phone">
-        <svg viewBox="0 0 16 16" fill="currentColor" width="14" height="14"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/></svg>
-        Call Us Anytime: (343) 204-7703
-      </a>
-    </div>
-  </div>
-
   <!-- Navigation -->
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <a href="#hero" class="nav-logo" aria-label="Prisma Windows and Doors — Home">
@@ -1494,6 +1497,7 @@ ul { list-style: none; }
       <a href="#windows">Services</a>
       <a href="#windows">Our Works</a>
       <a href="#contact">Contact Us</a>
+      <a href="tel:+13432047703" class="nav-phone"><svg viewBox="0 0 16 16" fill="currentColor" width="15" height="15"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z"/></svg>(343) 204-7703</a>
       <a href="#hero" class="nav-cta">Get a Quote</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
