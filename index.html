@@ -1278,6 +1278,181 @@ ul { list-style: none; }
 .back-top:hover { background: var(--prisma-dark); }
 .back-top svg { width: 18px; height: 18px; }
 
+/* ═══════════════════════════════════════════
+   PROMO BANNER — Summer Savings
+   ═══════════════════════════════════════════ */
+.promo-banner {
+  position: relative;
+  background: var(--prisma-navy);
+  overflow: hidden;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 4vw, 4rem);
+}
+.promo-bg-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.promo-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.06;
+  background: var(--prisma-warm);
+}
+.promo-shape--1 { width: 500px; height: 500px; top: -200px; right: -100px; }
+.promo-shape--2 { width: 300px; height: 300px; bottom: -100px; left: -50px; }
+.promo-shape--3 { width: 200px; height: 200px; top: 50%; left: 40%; transform: translate(-50%, -50%); }
+
+.promo-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.promo-image {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.promo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 320px;
+}
+.promo-badge-float {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 90px;
+  height: 90px;
+  background: var(--prisma-red);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(211,47,47,0.4);
+  animation: promo-pulse 2s ease-in-out infinite;
+}
+@keyframes promo-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+.promo-badge-percent {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+}
+.promo-badge-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.promo-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--prisma-warm);
+  background: rgba(200,149,108,0.12);
+  padding: 0.4rem 1.2rem;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+}
+.promo-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+.promo-title em {
+  font-style: normal;
+  color: var(--prisma-warm);
+}
+.promo-offers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+.promo-offer {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  transition: background 0.3s, transform 0.3s;
+}
+.promo-offer:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateX(4px);
+}
+.promo-offer-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  background: rgba(200,149,108,0.15);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.promo-offer-icon svg { width: 22px; height: 22px; color: var(--prisma-warm); }
+.promo-offer-text strong {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.promo-offer-text p {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 0;
+}
+.promo-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--prisma-red);
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 20px rgba(211,47,47,0.3);
+}
+.promo-cta:hover {
+  background: #b71c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(211,47,47,0.4);
+}
+.promo-cta svg { transition: transform 0.3s; }
+.promo-cta:hover svg { transform: translateX(4px); }
+
+@media (max-width: 1024px) {
+  .promo-inner { grid-template-columns: 1fr; }
+  .promo-image { max-height: 300px; }
+}
+
 /* CTA кнопка в хедере при скролле — акцент */
 .header-wrap.scrolled .nav-cta {
   background: var(--prisma-red, #D32F2F) !important;
@@ -1378,6 +1553,54 @@ ul { list-style: none; }
       </div>
       <button type="submit" class="form-submit">Request Now</button>
     </form>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SUMMER SAVINGS PROMO
+     ═══════════════════════════════════════════ -->
+<section class="promo-banner" id="promo" aria-label="Summer Savings Event">
+  <div class="promo-bg-shapes">
+    <div class="promo-shape promo-shape--1"></div>
+    <div class="promo-shape promo-shape--2"></div>
+    <div class="promo-shape promo-shape--3"></div>
+  </div>
+  <div class="promo-inner">
+    <div class="promo-image reveal-left">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Beautiful home with new windows and doors" loading="lazy">
+      <div class="promo-badge-float">
+        <span class="promo-badge-percent">50%</span>
+        <span class="promo-badge-label">OFF</span>
+      </div>
+    </div>
+    <div class="promo-content reveal-right">
+      <span class="promo-eyebrow">Limited Time Offer</span>
+      <h2 class="promo-title">Summer Savings<br><em>Event</em></h2>
+      <div class="promo-offers">
+        <div class="promo-offer">
+          <div class="promo-offer-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+          </div>
+          <div class="promo-offer-text">
+            <strong>Save 50% on Windows</strong>
+            <p>+ FREE triple-pane upgrade for better efficiency</p>
+          </div>
+        </div>
+        <div class="promo-offer">
+          <div class="promo-offer-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7-.7.7m.7 12.1-.7-.7M6.3 17.7l-.7.7"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <div class="promo-offer-text">
+            <strong>Steel or Fiberglass Doors</strong>
+            <p>Upgrade and get a FREE exterior colour of your choice</p>
+          </div>
+        </div>
+      </div>
+      <a href="#hero" class="promo-cta">
+        Request Free Quote
+        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+      </a>
+    </div>
   </div>
 </section>
 
