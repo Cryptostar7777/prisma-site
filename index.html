@@ -61,7 +61,7 @@
   --font: 'Montserrat', sans-serif;
   --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --nav-h: 72px;
+  --nav-h: 100px;
   --top-bar-h: 36px;
   --header-h: calc(var(--nav-h) + var(--top-bar-h));
 }
@@ -199,11 +199,7 @@ ul { list-style: none; }
 .nav-logo svg { width: 36px; height: 36px; }
 .nav-logo-svg { height: 88px; width: auto; object-fit: contain; }
 .nav-logo-text {
-  font-size: 2.2rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--prisma-navy);
+  display: none; /* Logo SVG already contains brand name */
 }
 .nav-links {
   display: flex;
@@ -211,7 +207,7 @@ ul { list-style: none; }
   gap: 2.2rem;
 }
 .nav-links a {
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   color: var(--prisma-dark);
@@ -231,10 +227,10 @@ ul { list-style: none; }
 .nav-cta {
   background: var(--prisma-navy);
   color: var(--prisma-white) !important;
-  padding: 0.6rem 1.5rem;
+  padding: 0.7rem 1.8rem;
   border-radius: 6px;
   font-weight: 600;
-  font-size: 0.8rem !important;
+  font-size: 0.95rem !important;
   letter-spacing: 0.08em !important;
   transition: background 0.3s, transform 0.3s !important;
 }
