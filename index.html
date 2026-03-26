@@ -81,13 +81,17 @@
 }
 @media (max-width: 768px) {
   .header-wrap {
+    position: absolute !important;
     background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
   .header-wrap.scrolled {
-    background: rgba(0,0,0,0.15) !important;
-    backdrop-filter: blur(12px) saturate(150%);
-    -webkit-backdrop-filter: blur(12px) saturate(150%);
-    box-shadow: 0 1px 12px rgba(0,0,0,0.08);
+    background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
 }
 .top-bar { background: var(--prisma-navy); padding: 8px 0; }
