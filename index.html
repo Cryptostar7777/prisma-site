@@ -1279,10 +1279,17 @@ ul { list-style: none; }
 .back-top:hover { background: var(--prisma-dark); }
 .back-top svg { width: 18px; height: 18px; }
 
-/* Footer logo — белая версия */
+/* Footer logo — чисто белая версия */
 .footer-logo-img {
   filter: brightness(0) invert(1) !important;
-  opacity: 0.95;
+}
+
+/* CTA кнопка в хедере при скролле — акцент */
+.header-wrap.scrolled .nav-cta {
+  background: var(--prisma-red, #D32F2F) !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(211,47,47,0.3);
+  transform: scale(1.02);
 }
 </style>
 </head>
