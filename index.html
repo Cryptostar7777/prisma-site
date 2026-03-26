@@ -537,12 +537,15 @@ ul { list-style: none; }
   aspect-ratio: 4 / 3;
   position: relative;
   overflow: hidden;
-  background: var(--prisma-cream);
+  background: var(--prisma-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .window-card-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   display: block;
   transition: transform 0.5s var(--ease-out);
